@@ -107,6 +107,11 @@ Provide EACH text field in BOTH English and Chinese. Use the following key namin
 - key_details_en / key_details_zh
 - background_en / background_zh
 - community_discussion_en / community_discussion_zh
+- application_prospects_en / application_prospects_zh
+- tech_stack_en / tech_stack_zh
+- getting_started_en / getting_started_zh
+- target_users_en / target_users_zh
+- similar_projects_en / similar_projects_zh
 
 Field definitions:
 0. **title** (one short phrase, ≤15 words): A clear, accurate headline for the project.
@@ -121,9 +126,20 @@ Field definitions:
 
 5. **community_discussion** (1-3 sentences): If community comments are provided, summarize developer sentiment - are people excited, skeptical, finding bugs, requesting features, or already building on it? If no comments, return empty string.
 
+6. **application_prospects** (2-3 complete sentences): Concrete application scenarios and commercialization potential. What real-world problems can this solve? What products or services could be built on it? What's the monetization path (SaaS/API/on-prem/marketplace)? Name specific industries or use cases.
+
+7. **tech_stack** (1-2 complete sentences): The core technology stack. Programming language(s), key frameworks, model dependencies (e.g. PyTorch/Transformers), infrastructure (Docker/K8s), and notable integrations. Be specific with names and versions where known.
+
+8. **getting_started** (2-3 complete sentences): How hard is it to get running? Rate difficulty as 入门/进阶/专家 (beginner/intermediate/expert). List the essential prerequisites (Python version, GPU, API keys) and the rough steps to a first working result. Note any hardware/compute requirements.
+
+9. **target_users** (1-2 complete sentences): Who is this for? Be specific: individual developers, enterprise teams, researchers, non-technical end-users? Which roles (e.g. backend engineer, ML practitioner, DevOps)? Which industries?
+
+10. **similar_projects** (2-4 sentences): Name 2-4 competing or related projects (with brief positioning). For each, explain how this project differs - better/worse on what dimension? Is it a cheaper, faster, more open, or more specialized alternative? If no direct competitors exist, name the closest analogues.
+
 **CRITICAL - Language rules (MUST follow):**
 - All *_en fields MUST be written in English.
 - All *_zh fields MUST be written in Simplified Chinese (简体中文). 绝对不能用英文写 _zh 字段的内容。Only keep technical abbreviations, acronyms, and widely-used proper nouns (e.g. "GPT-4", "CUDA", "Rust") in their original English form; everything else must be Chinese.
+- For the **getting_started** difficulty rating, the _zh field MUST use 入门/进阶/专家; the _en field MUST use beginner/intermediate/expert.
 
 Guidelines:
 - EVERY field (except community_discussion when no comments exist) must contain at least one complete sentence - no field may be empty or contain just a phrase
@@ -131,6 +147,7 @@ Guidelines:
 - ONLY explain concepts and terms that are explicitly mentioned in the title, summary, or content
 - Use the web search results to ensure accuracy, especially for recent projects, tools, or events
 - If the project is self-explanatory and needs no background, return an empty string for both background fields
+- For **similar_projects**: only name projects you are confident exist; if genuinely unsure, name the closest category leaders
 - For **sources**: pick 1-3 URLs from the Web Search Results that you actually relied on for the background fields. Only use URLs that appear verbatim in the search results above - do not invent or modify URLs.
 """
 
@@ -165,5 +182,15 @@ Respond with valid JSON only. Each _en field must be in English; each _zh field 
   "background_zh": "<用中文写2-4句话，或空字符串>",
   "community_discussion_en": "<1-3 sentences in English, or empty string>",
   "community_discussion_zh": "<用中文写1-3句话，或空字符串>",
+  "application_prospects_en": "<2-3 sentences in English>",
+  "application_prospects_zh": "<用中文写2-3句话>",
+  "tech_stack_en": "<1-2 sentences in English>",
+  "tech_stack_zh": "<用中文写1-2句话>",
+  "getting_started_en": "<2-3 sentences in English, include beginner/intermediate/expert rating>",
+  "getting_started_zh": "<用中文写2-3句话，包含入门/进阶/专家评级>",
+  "target_users_en": "<1-2 sentences in English>",
+  "target_users_zh": "<用中文写1-2句话>",
+  "similar_projects_en": "<2-4 sentences in English, name 2-4 competitors>",
+  "similar_projects_zh": "<用中文写2-4句话，列举2-4个竞品>",
   "sources": ["<url from search results>", "..."]
 }}"""
