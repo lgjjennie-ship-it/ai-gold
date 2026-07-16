@@ -30,11 +30,10 @@ jobs:
       - name: Prepare GitHub Actions config
         run: cp data/config.github.json data/config.json
 
-      - name: Clear today's project archives
+      - name: Clear project archives
         run: |
-          TODAY=$(date -u +'%Y-%m-%d')
-          rm -f docs/_projects/${TODAY}-*.md
-          echo "Cleared project archives for ${TODAY}"
+          rm -f docs/_projects/*.md
+          echo "Cleared all project archives (full rebuild each run)"
 
       - name: Run AI Gold
         env:
@@ -51,7 +50,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
-          keep_files: true
+          keep_files: false
           commit_message: "⛏️ AI掘金 Summary: ${{ env.DATE }}"
           publish_branch: gh-pages
           enable_jekyll: true

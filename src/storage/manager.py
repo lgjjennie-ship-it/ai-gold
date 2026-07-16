@@ -149,17 +149,30 @@ class StorageManager:
 
         written = 0
         seen_slugs: set[str] = set()
+        seen_repos: set[str] = set()
         seen_urls: set[str] = set()
 
         for item in items:
             item_url = str(getattr(item, "url", "") or "")
-            if item_url and item_url in seen_urls:
-                continue
-            if item_url:
-                seen_urls.add(item_url)
+            meta = item.metadata or {}
+            repo_full = meta.get("repo", "") or ""
+
+            # Dedup by repo full name (stable across runs); star counts
+            # drift between runs and must not be the dedup key or slug.
+            dedup_key = repo_full or item_url
+            if dedup_key:
+                if dedup_key in seen_repos or dedup_key in seen_urls:
+                    continue
+                if repo_full:
+                    seen_repos.add(repo_full)
+                if item_url:
+                    seen_urls.add(item_url)
 
             title = (item.title or "untitled").strip()
-            base_slug = re.sub(r"[^a-zA-Z0-9\u4e00-\u9fff]+", "-", title).strip("-").lower()
+            slug_src = repo_full or title
+            base_slug = re.sub(
+                r"[^a-zA-Z0-9\u4e00-\u9fff]+", "-", slug_src
+            ).strip("-").lower()
             if not base_slug:
                 base_slug = "project"
             slug = f"{date}-{base_slug}"
@@ -184,9 +197,7 @@ class StorageManager:
 
             stars = (item.metadata or {}).get("stars", "")
             stars_str = str(stars) if stars else ""
-            repo_full = (item.metadata or {}).get("repo", "") or ""
 
-            meta = item.metadata or {}
             ai_summary = getattr(item, "ai_summary", "") or ""
 
             # Enrichment fields (title_zh/detailed_summary_zh/background_zh/
