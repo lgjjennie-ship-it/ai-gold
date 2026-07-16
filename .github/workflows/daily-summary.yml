@@ -30,6 +30,12 @@ jobs:
       - name: Prepare GitHub Actions config
         run: cp data/config.github.json data/config.json
 
+      - name: Clear today's project archives
+        run: |
+          TODAY=$(date -u +'%Y-%m-%d')
+          rm -f docs/_projects/${TODAY}-*.md
+          echo "Cleared project archives for ${TODAY}"
+
       - name: Run AI Gold
         env:
           ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}

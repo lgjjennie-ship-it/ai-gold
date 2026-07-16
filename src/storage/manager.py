@@ -149,8 +149,15 @@ class StorageManager:
 
         written = 0
         seen_slugs: set[str] = set()
+        seen_urls: set[str] = set()
 
         for item in items:
+            item_url = str(getattr(item, "url", "") or "")
+            if item_url and item_url in seen_urls:
+                continue
+            if item_url:
+                seen_urls.add(item_url)
+
             title = (item.title or "untitled").strip()
             base_slug = re.sub(r"[^a-zA-Z0-9\u4e00-\u9fff]+", "-", title).strip("-").lower()
             if not base_slug:
