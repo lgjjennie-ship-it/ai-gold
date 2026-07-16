@@ -186,8 +186,21 @@ class StorageManager:
             stars_str = str(stars) if stars else ""
             repo_full = (item.metadata or {}).get("repo", "") or ""
 
+            meta = item.metadata or {}
             ai_summary = getattr(item, "ai_summary", "") or ""
-            ai_reason = getattr(item, "ai_reason", "") or ""
+
+            # Enrichment fields (title_zh/detailed_summary_zh/background_zh/
+            # community_discussion_zh) are populated by ContentEnricher in the
+            # 2nd AI pass; fall back to ai_summary when enrichment failed.
+            title_zh = meta.get("title_zh") or ""
+            detailed_zh = meta.get("detailed_summary_zh") or ""
+            background_zh = meta.get("background_zh") or ""
+            discussion_zh = meta.get("community_discussion_zh") or ""
+            sources = meta.get("sources") or []
+
+            display_title = title_zh or title
+            card_summary_raw = detailed_zh or ai_summary
+            card_summary_flat = " ".join(card_summary_raw.split())
 
             meta_lines = []
             if source_name:
@@ -200,8 +213,8 @@ class StorageManager:
                 meta_lines.append(f"stars: {stars_str}")
             if repo_full:
                 meta_lines.append(f"repo: \"{repo_full}\"")
-            if ai_summary:
-                escaped_summary = ai_summary.replace('"', '\\"')
+            if card_summary_flat:
+                escaped_summary = card_summary_flat.replace('"', '\\"')
                 meta_lines.append(f"summary: \"{escaped_summary}\"")
             if tags:
                 meta_lines.append(f"tags: \"{tags}\"")
@@ -212,29 +225,68 @@ class StorageManager:
             url_str = str(url) if url else ""
 
             author = getattr(item, "author", "") or ""
-            author_line = f"**作者**: {author}\n" if author else ""
 
-            ai_section = ""
-            if ai_summary:
-                ai_section += f"\n## AI 摘要\n\n{ai_summary}\n"
-            if ai_reason:
-                ai_section += f"\n## AI 评价\n\n{ai_reason}\n"
+            body_parts = [f"# {display_title}\n", ""]
+
+            if card_summary_flat:
+                intro = card_summary_flat[:200]
+                body_parts.append(f"> {intro}\n")
+                body_parts.append("")
+
+            meta_info = []
+            if url_str:
+                meta_info.append(f"**项目链接**：{url_str}")
+            if author:
+                meta_info.append(f"**作者**：{author}")
+            if published:
+                meta_info.append(f"**发布时间**：{published_str}")
+            meta_info.append(f"**挖掘日期**：{date}")
+            if score_str:
+                meta_info.append(f"**AI 评分**：{score_str}/10")
+            if stars_str:
+                meta_info.append(f"**Star 数**：{stars_str}")
+            if source_name:
+                meta_info.append(f"**来源**：{source_name}")
+            if tags:
+                meta_info.append(f"**标签**：{tags}")
+            if meta_info:
+                body_parts.append("\n".join(meta_info) + "\n")
+                body_parts.append("")
+
+            if detailed_zh:
+                body_parts.append("## 📌 项目详解\n")
+                body_parts.append(detailed_zh + "\n")
+                body_parts.append("")
+            if background_zh:
+                body_parts.append("## 🌐 背景与生态\n")
+                body_parts.append(background_zh + "\n")
+                body_parts.append("")
+            if discussion_zh:
+                body_parts.append("## 💬 社区讨论\n")
+                body_parts.append(discussion_zh + "\n")
+                body_parts.append("")
+
+            if sources:
+                body_parts.append("## 📚 参考链接\n")
+                for src in sources:
+                    src_url = src.get("url", "")
+                    src_title = src.get("title", src_url) or src_url
+                    if src_url:
+                        body_parts.append(f"- [{src_title}]({src_url})")
+                body_parts.append("")
 
             content = getattr(item, "content", "") or ""
+            if content:
+                body_parts.append("<details><summary>📄 查看原文内容</summary>\n")
+                body_parts.append("")
+                body_parts.append(content)
+                body_parts.append("")
+                body_parts.append("</details>\n")
 
-            body_parts = [
-                f"# {title}\n",
-                f"**链接**: {url_str}\n" if url_str else "",
-                author_line,
-                f"**发布时间**: {published_str}\n" if published else "",
-                f"**采集日期**: {date}\n",
-                ai_section,
-                "\n## 原文内容\n\n" + content if content else "",
-            ]
-            body = "\n".join(part for part in body_parts if part)
+            body = "\n".join(body_parts)
 
             discovered_date_prefix = f"{date}T12:00:00+00:00"
-            escaped_title = title.replace('"', '\\"')
+            escaped_title = display_title.replace('"', '\\"')
             front_matter = (
                 "---\n"
                 "layout: default\n"
