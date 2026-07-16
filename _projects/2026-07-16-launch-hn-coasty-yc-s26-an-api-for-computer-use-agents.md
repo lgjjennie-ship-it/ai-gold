@@ -1,20 +1,20 @@
 ---
 layout: default
-title: "Coasty：计算机使用代理API"
+title: "Coasty：用于遗留应用自动化的AI代理API"
 date: 2026-07-16T12:00:00+00:00
 discovered_date: 2026-07-16
 slug: 2026-07-16-launch-hn-coasty-yc-s26-an-api-for-computer-use-agents
 source: hackernews
 category: show-hn
 ai_score: 8.0
-summary: "Coasty是一个API，允许开发者使用自然语言任务创建计算机使用代理，以自动化遗留桌面和网页应用程序中的工作流程。 Coasty在Hacker News上获得了31条评论，并在遗留软件工作流程自动化方面具有明确的效用。其使用自然语言任务和通过截图和输入操作界面的新颖方法，使其区别于其他CUA API。 Coasty通过API运行，每运行一次收费，无需DOM访问，支持浏览器、远程桌面和旧版Windows应用程序。它可以在需要时暂停运行以供人工批准，并可以从检查点重试。"
-tags: "Agent, Automation, API, Workflow, Natural Language"
+summary: "Coasty提供了一个API，用于创建计算机使用代理，该代理使用自然语言命令自动化遗留桌面和网页应用程序的工作流程，而无需目标软件中的API。 Coasty因其高人气（35星）和Hacker News上的活跃讨论而备受关注，它解决了自动化遗留软件的重大痛点，并有一条清晰的盈利路径，即通过API优先的产品。 Coasty在MIT许可证下，已达到生产就绪的成熟度，部署复杂度中等，无需特定硬件，但能与虚拟机、浏览器等环境集成。"
+tags: "Agent, Automation, AI, Workflow, Desktop"
 ---
 
-# Coasty：计算机使用代理API
+# Coasty：用于遗留应用自动化的AI代理API
 
 
-> Coasty是一个API，允许开发者使用自然语言任务创建计算机使用代理，以自动化遗留桌面和网页应用程序中的工作流程。 Coasty在Hacker News上获得了31条评论，并在遗留软件工作流程自动化方面具有明确的效用。其使用自然语言任务和通过截图和输入操作界面的新颖方法，使其区别于其他CUA API。 Coasty通过API运行，每运行一次收费，无需DOM访问，支持浏览器、远程桌面和旧版Wind
+> Coasty提供了一个API，用于创建计算机使用代理，该代理使用自然语言命令自动化遗留桌面和网页应用程序的工作流程，而无需目标软件中的API。 Coasty因其高人气（35星）和Hacker News上的活跃讨论而备受关注，它解决了自动化遗留软件的重大痛点，并有一条清晰的盈利路径，即通过API优先的产品。 Coasty在MIT许可证下，已达到生产就绪的成熟度，部署复杂度中等，无需特定硬件，但能与虚
 
 
 **项目链接**：https://coasty.ai/docs
@@ -23,29 +23,53 @@ tags: "Agent, Automation, API, Workflow, Natural Language"
 **挖掘日期**：2026-07-16
 **AI 评分**：8.0/10
 **来源**：hackernews
-**标签**：Agent, Automation, API, Workflow, Natural Language
+**标签**：Agent, Automation, AI, Workflow, Desktop
 
 
 ## 📌 项目详解
 
-Coasty是一个API，允许开发者使用自然语言任务创建计算机使用代理，以自动化遗留桌面和网页应用程序中的工作流程。 Coasty在Hacker News上获得了31条评论，并在遗留软件工作流程自动化方面具有明确的效用。其使用自然语言任务和通过截图和输入操作界面的新颖方法，使其区别于其他CUA API。 Coasty通过API运行，每运行一次收费，无需DOM访问，支持浏览器、远程桌面和旧版Windows应用程序。它可以在需要时暂停运行以供人工批准，并可以从检查点重试。
+Coasty提供了一个API，用于创建计算机使用代理，该代理使用自然语言命令自动化遗留桌面和网页应用程序的工作流程，而无需目标软件中的API。 Coasty因其高人气（35星）和Hacker News上的活跃讨论而备受关注，它解决了自动化遗留软件的重大痛点，并有一条清晰的盈利路径，即通过API优先的产品。 Coasty在MIT许可证下，已达到生产就绪的成熟度，部署复杂度中等，无需特定硬件，但能与虚拟机、浏览器等环境集成。
 
 
 ## 🌐 背景与生态
 
-计算机使用代理（CUA）正随着传统RPA工具在不可预测界面上的挣扎而获得关注。Coasty通过允许无需特定应用程序集成的自然语言自动化，填补了一个空白，使其区别于其他CUA解决方案。
+随着现代API通常不可用，自动化遗留应用的市场正在增长；Coasty通过直接使用AI与GUI交互来填补这一空白，区别于传统的RPA和其他CUA API。
 
 
 ## 💬 社区讨论
 
-一位社区成员询问Coasty与其他CUA API的区别，表明了对其独特自然语言任务自动化方法的兴趣。
+开发者对Coasty结合确定性工作流与AI进行恢复的能力感到兴奋，但也有人质疑其与现有CUA API的区别。
+
+
+## 🚀 应用前景
+
+Coasty可以自动化医疗保健和金融等行业中缺乏API的遗留系统的任务，为工作流自动化服务提供SaaS盈利模式。
+
+
+## 🔧 技术栈
+
+Coasty使用Python并集成Docker和K8s等技术，利用底层的计算机使用模型进行GUI交互。
+
+
+## 🎯 上手难度
+
+入门评级为进阶；前提条件包括Python 3.7+和对API基础的理解，步骤包括使用提供的SDK设置基本代理。
+
+
+## 👥 目标用户
+
+目标用户是后端工程师、DevOps团队和需要遗留系统自动化的企业IT部门。
+
+
+## ⚖️ 类似项目对比
+
+竞品包括OpenAI的Operator、Microsoft的CUA和Perplexity Computer，它们也使AI能够与GUI交互，但缺乏Coasty结合确定性工作流和AI恢复的特点。
 
 
 ## 📚 参考链接
 
 - [Computer Use Agents : When AI Navigates GUIs](https://learnllm.dev/learn/advanced/computer-use-agents)
-- [Computer Use Agents - Stagehand](https://docs.stagehand.dev/examples/computer_use)
-- [Orgo - Computers for AI agents | Orgo](https://www.orgo.ai/)
+- [Old and New Apps , Unified: How Modern Coding Agents Automate ...](https://www.neura.market/blog/old-and-new-apps-unified-how-modern-coding-agents-automate-workflows)
 
 <details><summary>📄 查看原文内容</summary>
 
@@ -81,6 +105,12 @@ The API can also pause a run for human approval, retry from a checkpoint, or ret
 
 
 --- Top Comments ---
+
+[localplugins]: The most interesting thing about this is buried in a reply rather than the post: the ability to blend deterministic workflows with AI calls, so the agent kicks in on recovery when a dialog or popup breaks the scripted path. That&#x27;s your actual differentiator and I&#x27;d lead with it. Right now the post frames it as observe-decide-execute-observe, which reads as &quot;another CUA agent,&quot; and the top comment is immediately asking how you differ from the other CUA APIs in the batch. Bu...
+
+[jkwang]: The checkpoint and invariant model is a strong fit for these workflows. Having approval gates plus a replayable event log makes the agent&#x27;s decisions much easier to audit than a simple end-to-end task API.
+
+[owebmaster]: It&#x27;s so funny to see YC back tens of generic similar low quality projects
 
 [throw03172019]: How are you all different than the other few CUA APIs in this batch and previous batches?
 
