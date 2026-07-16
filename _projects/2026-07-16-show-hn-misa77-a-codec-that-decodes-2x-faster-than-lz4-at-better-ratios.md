@@ -1,12 +1,14 @@
 ---
 layout: default
 title: "Show HN: misa77 - a codec that decodes 2x faster than LZ4 (at better ratios)"
-date: 2026-07-15T15:58:59Z
+date: 2026-07-16T12:00:00+00:00
+discovered_date: 2026-07-16
 slug: 2026-07-16-show-hn-misa77-a-codec-that-decodes-2x-faster-than-lz4-at-better-ratios
 source: hackernews
 category: show-hn
 ai_score: 8.0
-tags: "Compression, Codec, Performance, Decompression, Efficiency"
+summary: "misa77 is a high-performance codec that decodes 2x faster than LZ4 while maintaining competitive compression ratios, optimized for out-of-order cores."
+tags: "Codec, Performance, Compression, Decompression, Optimization"
 ---
 
 # Show HN: misa77 - a codec that decodes 2x faster than LZ4 (at better ratios)
@@ -22,11 +24,11 @@ tags: "Compression, Codec, Performance, Decompression, Efficiency"
 
 ## AI 摘要
 
-misa77 is a high-performance codec that prioritizes fast decompression with competitive compression ratios, making it suitable for use cases where decompression speed is critical.
+misa77 is a high-performance codec that decodes 2x faster than LZ4 while maintaining competitive compression ratios, optimized for out-of-order cores.
 
 ## AI 评价
 
-High traction with 136 stars and active discussion on Hacker News (40 comments) indicates strong community interest. The project offers a novel approach to compression with significantly faster decompression than LZ4, suggesting practical utility and potential for integration into performance-critical applications. While compression speed is slower, the high decompression speed and competitive ratios make it attractive for specific use cases.
+High traction with 139 stars and 40 comments on HN, indicating strong community interest. The project offers a novel approach with SOTA decompression throughput, suggesting practical utility and potential for monetization in performance-critical applications. However, it's still in early stages (v0.x.y) with experimental status, limiting its immediate commercial viability.
 
 
 ## 原文内容
