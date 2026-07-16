@@ -175,6 +175,13 @@ class StorageManager:
             source_name = getattr(source_type, "value", str(source_type)) if source_type else ""
             category = (item.metadata or {}).get("category", "") or ""
 
+            stars = (item.metadata or {}).get("stars", "")
+            stars_str = str(stars) if stars else ""
+            repo_full = (item.metadata or {}).get("repo", "") or ""
+
+            ai_summary = getattr(item, "ai_summary", "") or ""
+            ai_reason = getattr(item, "ai_reason", "") or ""
+
             meta_lines = []
             if source_name:
                 meta_lines.append(f"source: {source_name}")
@@ -182,6 +189,13 @@ class StorageManager:
                 meta_lines.append(f"category: {category}")
             if score_str:
                 meta_lines.append(f"ai_score: {score_str}")
+            if stars_str:
+                meta_lines.append(f"stars: {stars_str}")
+            if repo_full:
+                meta_lines.append(f"repo: \"{repo_full}\"")
+            if ai_summary:
+                escaped_summary = ai_summary.replace('"', '\\"')
+                meta_lines.append(f"summary: \"{escaped_summary}\"")
             if tags:
                 meta_lines.append(f"tags: \"{tags}\"")
             meta_block = "\n".join(meta_lines)
@@ -193,8 +207,6 @@ class StorageManager:
             author = getattr(item, "author", "") or ""
             author_line = f"**作者**: {author}\n" if author else ""
 
-            ai_summary = getattr(item, "ai_summary", "") or ""
-            ai_reason = getattr(item, "ai_reason", "") or ""
             ai_section = ""
             if ai_summary:
                 ai_section += f"\n## AI 摘要\n\n{ai_summary}\n"
@@ -214,12 +226,14 @@ class StorageManager:
             ]
             body = "\n".join(part for part in body_parts if part)
 
+            discovered_date_prefix = f"{date}T12:00:00+00:00"
             escaped_title = title.replace('"', '\\"')
             front_matter = (
                 "---\n"
                 "layout: default\n"
                 f"title: \"{escaped_title}\"\n"
-                f"date: {published_str}\n"
+                f"date: {discovered_date_prefix}\n"
+                f"discovered_date: {date}\n"
                 f"slug: {slug}\n"
                 + meta_section
                 + "---\n\n"
