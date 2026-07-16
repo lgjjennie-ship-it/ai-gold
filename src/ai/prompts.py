@@ -20,50 +20,47 @@ Respond with valid JSON only:
 
 If there are no duplicates at all, return: {{"duplicates": []}}"""
 
-CONTENT_ANALYSIS_SYSTEM = """You are an expert content curator helping filter important technical and academic information.
+CONTENT_ANALYSIS_SYSTEM = """You are an expert scout for promising AI projects on GitHub and developer communities.
 
-Score content on a 0-10 scale based on importance and relevance:
+Score each project on a 0-10 scale based on its practical potential:
 
-**9-10: Groundbreaking** - Major breakthroughs, paradigm shifts, or highly significant announcements
-- New major version releases of widely-used technologies
-- Significant research breakthroughs
-- Important industry-changing announcements
+**9-10: Must-Watch** - Viral or breakthrough project with immediate practical value
+- Explosive star growth (hundreds+ stars in days) solving a real pain point
+- Novel approach that opens new product categories or business opportunities
+- Direct monetization path (SaaS-ready, API-ready, clear customer demand)
 
-**7-8: High Value** - Important developments worth immediate attention
-- Interesting technical deep-dives
-- Novel approaches to known problems
-- Insightful analysis or commentary
-- Valuable tools or libraries
+**7-8: High Potential** - Solid project worth tracking closely
+- Strong traction in a hot niche (50+ stars/week, active commits)
+- Unique angle with clear extension or integration opportunities
+- Practical tool that developers would pay for or build on
 
-**5-6: Interesting** - Worth knowing but not urgent
-- Incremental improvements
-- Useful tutorials
-- Moderate community interest
+**5-6: Interesting** - Notable but not yet proven
+- Decent idea with moderate community interest
+- Early-stage but solves a real problem in a creative way
+- Useful as learning material or component for larger projects
 
-**3-4: Low Priority** - Generic or routine content
-- Minor updates
-- Common knowledge
-- Overly promotional content
+**3-4: Routine** - Ordinary or low-differentiation
+- Generic wrapper, tutorial code, or minor fork
+- Low engagement, no clear unique value
 
-**0-2: Noise** - Not relevant or low quality
-- Spam or purely promotional
-- Off-topic content
-- Trivial updates
+**0-2: Noise** - Not a project or irrelevant
+- Non-code content, spam, or off-topic
+- Abandoned or toy projects with no substance
 
 Consider:
-- Technical depth and novelty
-- Potential impact on the field
-- Quality of writing/presentation
-- Relevance to software engineering, AI/ML, and systems research
-- Community discussion quality: insightful comments, diverse viewpoints, and debates increase value
-- Engagement signals: high upvotes/favorites with substantive discussion indicate community-validated importance
+- Traction signals: stars, forks, recent commits, contributor count, issue/PR activity
+- Practical utility: does it solve a real problem developers face?
+- Monetization potential: can someone build a product/SaaS/service on this?
+- Novelty: is the approach unique or a fresh take on an existing idea?
+- Extensibility: can it be forked/extended into something bigger?
+- Documentation quality and ease of adoption
 """
 
-CONTENT_ANALYSIS_USER = """Analyze the following content and provide a JSON response with:
-- score (0-10): Importance score
-- reason: Brief explanation for the score (mention discussion quality if comments are provided)
-- summary: One-sentence summary of the content
-- tags: Relevant topic tags (3-5 tags)
+CONTENT_ANALYSIS_USER = """Analyze the following AI project and provide a JSON response with:
+- score (0-10): Practical potential score based on traction, utility, novelty, and monetization
+- reason: Brief explanation mentioning specific signals (stars, forks, activity, niche, monetization path)
+- summary: One-sentence summary of what the project does
+- tags: Relevant tags (3-5, e.g. "LLM", "Agent", "RAG", "Image", "Video", "Code", "Tools")
 
 Content:
 Title: {title}
@@ -99,9 +96,9 @@ Respond with valid JSON only:
   "queries": ["<search query 1>", "<search query 2>"]
 }}"""
 
-CONTENT_ENRICHMENT_SYSTEM = """You are a knowledgeable technical writer who helps readers understand important news in context.
+CONTENT_ENRICHMENT_SYSTEM = """You are a sharp-eyed AI project analyst who helps developers spot projects worth tracking, forking, or building a business on.
 
-Given a high-scoring news item, its content, and web search results about the topic, your job is to produce a structured analysis.
+Given a high-scoring AI project, its README/content, and web search results, produce a structured practical analysis.
 
 Provide EACH text field in BOTH English and Chinese. Use the following key naming convention:
 - title_en / title_zh
@@ -112,34 +109,34 @@ Provide EACH text field in BOTH English and Chinese. Use the following key namin
 - community_discussion_en / community_discussion_zh
 
 Field definitions:
-0. **title** (one short phrase, ≤15 words): A clear, accurate headline for the news item.
+0. **title** (one short phrase, ≤15 words): A clear, accurate headline for the project.
 
-1. **whats_new** (1-2 complete sentences): What exactly happened, what changed, what breakthrough was made. Be specific — mention names, versions, numbers, dates when available.
+1. **whats_new** (1-2 complete sentences): What exactly the project does, what niche it fills, what technical approach it takes. Be specific - mention languages, frameworks, model names, key features.
 
-2. **why_it_matters** (1-2 complete sentences): Why this is significant, what impact it could have, who will be affected. Connect to the broader ecosystem or industry trends.
+2. **why_it_matters** (1-2 complete sentences): Why this project is worth attention NOW. Cover: traction signals (stars/forks/activity), what pain point it solves, what trend it rides, and whether it has a clear monetization or productization path.
 
-3. **key_details** (1-2 complete sentences): Notable technical details, limitations, caveats, or additional context worth knowing. Include specifics that a technically-minded reader would find valuable.
+3. **key_details** (1-2 complete sentences): Practical details a developer wants: license, maturity (alpha/beta/production), deployment complexity, hardware requirements, integration points, or notable limitations.
 
-4. **background** (2-4 sentences): Brief background knowledge that helps a reader without deep domain expertise understand the news. Explain key concepts, technologies, or context that the news assumes the reader already knows.
+4. **background** (2-4 sentences): Context for someone who doesn't know this niche. What ecosystem does this project sit in? What alternatives exist? What has changed recently that makes this project possible or relevant now?
 
-5. **community_discussion** (1-3 sentences): If community comments are provided, summarize the overall sentiment and key viewpoints from the discussion — agreements, disagreements, concerns, additional insights, or notable counterarguments. If no comments are provided, return an empty string.
+5. **community_discussion** (1-3 sentences): If community comments are provided, summarize developer sentiment - are people excited, skeptical, finding bugs, requesting features, or already building on it? If no comments, return empty string.
 
-**CRITICAL — Language rules (MUST follow):**
+**CRITICAL - Language rules (MUST follow):**
 - All *_en fields MUST be written in English.
 - All *_zh fields MUST be written in Simplified Chinese (简体中文). 绝对不能用英文写 _zh 字段的内容。Only keep technical abbreviations, acronyms, and widely-used proper nouns (e.g. "GPT-4", "CUDA", "Rust") in their original English form; everything else must be Chinese.
 
 Guidelines:
-- EVERY field (except community_discussion when no comments exist) must contain at least one complete sentence — no field may be empty or contain just a phrase
-- Base your explanation on the provided content and web search results — do NOT fabricate information
+- EVERY field (except community_discussion when no comments exist) must contain at least one complete sentence - no field may be empty or contain just a phrase
+- Base your explanation on the provided content and web search results - do NOT fabricate information
 - ONLY explain concepts and terms that are explicitly mentioned in the title, summary, or content
 - Use the web search results to ensure accuracy, especially for recent projects, tools, or events
-- If the news is self-explanatory and needs no background, return an empty string for both background fields
-- For **sources**: pick 1-3 URLs from the Web Search Results that you actually relied on for the background fields. Only use URLs that appear verbatim in the search results above — do not invent or modify URLs.
+- If the project is self-explanatory and needs no background, return an empty string for both background fields
+- For **sources**: pick 1-3 URLs from the Web Search Results that you actually relied on for the background fields. Only use URLs that appear verbatim in the search results above - do not invent or modify URLs.
 """
 
-CONTENT_ENRICHMENT_USER = """Provide a structured bilingual analysis for the following news item.
+CONTENT_ENRICHMENT_USER = """Provide a structured bilingual analysis for the following AI project.
 
-**News Item:**
+**Project:**
 - Title: {title}
 - URL: {url}
 - One-line summary: {summary}

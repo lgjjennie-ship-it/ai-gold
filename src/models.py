@@ -170,6 +170,23 @@ class GitHubSourceConfig(BaseModel):
     category: Optional[str] = None
 
 
+class GitHubSearchConfig(BaseModel):
+    """GitHub Search API source configuration.
+
+    Runs multiple ``queries`` against the repository search endpoint and
+    emits one ContentItem per repo hit. ``sort`` defaults to ``stars`` so
+    the hottest projects surface first. Use ``GITHUB_TOKEN`` env var to
+    raise the rate limit from 10 to 30 req/min.
+    """
+
+    enabled: bool = True
+    queries: List[str] = Field(default_factory=list)
+    sort: str = "stars"
+    order: str = "desc"
+    per_page: int = 15
+    category: Optional[str] = None
+
+
 class HackerNewsConfig(BaseModel):
     """Hacker News configuration."""
 
@@ -375,6 +392,7 @@ class SourcesConfig(BaseModel):
     """All sources configuration."""
 
     github: List[GitHubSourceConfig] = Field(default_factory=list)
+    github_search: Optional["GitHubSearchConfig"] = None
     hackernews: HackerNewsConfig = Field(default_factory=HackerNewsConfig)
     rss: List[RSSSourceConfig] = Field(default_factory=list)
     reddit: RedditConfig = Field(default_factory=RedditConfig)
