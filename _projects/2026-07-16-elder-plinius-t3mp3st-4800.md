@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "多智能体红队平台"
+title: "基于多智能体的自主红队平台"
 date: 2026-07-16T12:00:00+00:00
 discovered_date: 2026-07-16
 slug: 2026-07-16-elder-plinius-t3mp3st-4800
@@ -9,14 +9,14 @@ category: github-hot
 ai_score: 9.0
 stars: 4800
 repo: "elder-plinius/T3MP3ST"
-summary: "一个使用多智能体系统的自主红队平台，用于攻击性安全测试，使用TypeScript开发。它利用AI智能体模拟攻击和协调任务。 该项目因其强大的吸引力（4800个星标，1009个分支）而备受重视，并以新颖的多智能体方法解决了攻击性安全的关键需求。它作为SaaS平台具有明确的盈利潜力。 该平台使用TypeScript编写，拥有一个不断增长的活跃社区。它需要大量的计算资源和与现有安全工具的集成。"
+summary: "T3MP3ST 是一个使用多智能体系统进行攻击性安全测试的自主红队平台，采用 TypeScript 进行开发。 该项目因其高人气（4800 星和 1008 分叉）而具有重要意义，它通过新颖的方法解决了攻击性安全的关键需求，并显示出作为 SaaS 平台的潜在盈利能力。 该平台使用 TypeScript 编写，许可证需要验证，目前处于积极开发中，最近的提交表明其成熟度正接近 Beta 阶段。"
 tags: "AI, Agent, Offensive-Security, RedTeam, Multi-Agent"
 ---
 
-# 多智能体红队平台
+# 基于多智能体的自主红队平台
 
 
-> 一个使用多智能体系统的自主红队平台，用于攻击性安全测试，使用TypeScript开发。它利用AI智能体模拟攻击和协调任务。 该项目因其强大的吸引力（4800个星标，1009个分支）而备受重视，并以新颖的多智能体方法解决了攻击性安全的关键需求。它作为SaaS平台具有明确的盈利潜力。 该平台使用TypeScript编写，拥有一个不断增长的活跃社区。它需要大量的计算资源和与现有安全工具的集成。
+> T3MP3ST 是一个使用多智能体系统进行攻击性安全测试的自主红队平台，采用 TypeScript 进行开发。 该项目因其高人气（4800 星和 1008 分叉）而具有重要意义，它通过新颖的方法解决了攻击性安全的关键需求，并显示出作为 SaaS 平台的潜在盈利能力。 该平台使用 TypeScript 编写，许可证需要验证，目前处于积极开发中，最近的提交表明其成熟度正接近 Beta 阶段。
 
 
 **项目链接**：https://github.com/elder-plinius/T3MP3ST
@@ -31,24 +31,24 @@ tags: "AI, Agent, Offensive-Security, RedTeam, Multi-Agent"
 
 ## 📌 项目详解
 
-一个使用多智能体系统的自主红队平台，用于攻击性安全测试，使用TypeScript开发。它利用AI智能体模拟攻击和协调任务。 该项目因其强大的吸引力（4800个星标，1009个分支）而备受重视，并以新颖的多智能体方法解决了攻击性安全的关键需求。它作为SaaS平台具有明确的盈利潜力。 该平台使用TypeScript编写，拥有一个不断增长的活跃社区。它需要大量的计算资源和与现有安全工具的集成。
+T3MP3ST 是一个使用多智能体系统进行攻击性安全测试的自主红队平台，采用 TypeScript 进行开发。 该项目因其高人气（4800 星和 1008 分叉）而具有重要意义，它通过新颖的方法解决了攻击性安全的关键需求，并显示出作为 SaaS 平台的潜在盈利能力。 该平台使用 TypeScript 编写，许可证需要验证，目前处于积极开发中，最近的提交表明其成熟度正接近 Beta 阶段。
 
 
 ## 🌐 背景与生态
 
-网络安全中的多智能体系统使用协调的自主智能体来模拟攻击，增强防御能力。该项目基于AI驱动红队日益增长的趋势，提供了一种比传统方法更具可扩展性和适应性的方法。
+网络安全中的多智能体系统利用集体智能来适应威胁，这与传统的单体解决方案不同。T3MP3ST 填补了自主红队领域的空白，而传统方法通常是手动和耗时的。
 
 
 ## 💬 社区讨论
 
-社区情绪积极，围绕功能请求和错误报告的讨论活跃，表明高度的参与度和进一步发展的潜力。
+社区表现出浓厚兴趣，最近的提交和大量的星标与分叉表明了积极的开发与参与。
 
 
 ## 📚 参考链接
 
-- [What is a Multi-Agent System? | IBM](https://www.ibm.com/think/topics/multiagent-system)
+- [Multi - agent system - Wikipedia](https://en.wikipedia.org/wiki/Multi-agent_system)
+- [What is a Multi - Agent System ? | IBM](https://www.ibm.com/think/topics/multiagent-system)
 - [What is a Multi-Agent System? Multi-Agent Security Technology Explained](https://reliaquest.com/cyber-knowledge/what-is-a-multi-agent-system-multi-agent-security-technology-explained/)
-- [The Multi-Agent System: A New Era for SecOps](https://torq.io/blog/the-multi-agent-system-a-new-era-for-secops/)
 
 <details><summary>📄 查看原文内容</summary>
 
@@ -56,7 +56,7 @@ tags: "AI, Agent, Offensive-Security, RedTeam, Multi-Agent"
 autonomous red teaming platform; multi-agent offensive-security meta-harness
 
 Language: TypeScript
-Stars: 4800  Forks: 1009  Open Issues: 14
+Stars: 4800  Forks: 1008  Open Issues: 14
 Topics: agents, ai, multi-agent, offensive-security, redteam
 Owner: elder-plinius
 Created: 2026-07-02T17:53:55Z   Last Push: 2026-07-16T05:19:20Z

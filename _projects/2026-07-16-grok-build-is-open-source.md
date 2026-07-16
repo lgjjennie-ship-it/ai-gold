@@ -1,20 +1,20 @@
 ---
 layout: default
-title: "Grok Build：开源终端渲染Mermaid图"
+title: "Grok Build 终端渲染器"
 date: 2026-07-16T12:00:00+00:00
 discovered_date: 2026-07-16
 slug: 2026-07-16-grok-build-is-open-source
 source: hackernews
 category: show-hn
 ai_score: 8.0
-summary: "Grok Build是一个开源项目，提供了一个自包含的终端渲染器，用于渲染Mermaid图，使用Unicode框线绘制Mermaid图表类型的子集。 Grok Build拥有369个星标和Hacker News上的活跃讨论，解决了在终端中可视化Mermaid图的问题，并顺应了基于终端的工具趋势。 该项目采用开源许可证，目前处于alpha阶段，部署复杂度适中，无特定硬件要求，易于集成到现有工作流程中。"
+summary: "Grok Build 是一个开源的 Mermaid 图表终端渲染器，使用 Unicode 字符框绘制来渲染 Mermaid 图表的一个子集。 该项目拥有 369 个星标和活跃的讨论，解决了在终端中可视化 Mermaid 图表的需求，并顺应了基于终端的工具的趋势。 该项目在 Apache 2.0 许可下，处于生产成熟度，部署复杂性相对较低，但需要在终端环境中运行。"
 tags: "LLM, Tools, Mermaid, Terminal, Code"
 ---
 
-# Grok Build：开源终端渲染Mermaid图
+# Grok Build 终端渲染器
 
 
-> Grok Build是一个开源项目，提供了一个自包含的终端渲染器，用于渲染Mermaid图，使用Unicode框线绘制Mermaid图表类型的子集。 Grok Build拥有369个星标和Hacker News上的活跃讨论，解决了在终端中可视化Mermaid图的问题，并顺应了基于终端的工具趋势。 该项目采用开源许可证，目前处于alpha阶段，部署复杂度适中，无特定硬件要求，易于集成到现有工作流程中
+> Grok Build 是一个开源的 Mermaid 图表终端渲染器，使用 Unicode 字符框绘制来渲染 Mermaid 图表的一个子集。 该项目拥有 369 个星标和活跃的讨论，解决了在终端中可视化 Mermaid 图表的需求，并顺应了基于终端的工具的趋势。 该项目在 Apache 2.0 许可下，处于生产成熟度，部署复杂性相对较低，但需要在终端环境中运行。
 
 
 **项目链接**：https://github.com/xai-org/grok-build
@@ -28,24 +28,24 @@ tags: "LLM, Tools, Mermaid, Terminal, Code"
 
 ## 📌 项目详解
 
-Grok Build是一个开源项目，提供了一个自包含的终端渲染器，用于渲染Mermaid图，使用Unicode框线绘制Mermaid图表类型的子集。 Grok Build拥有369个星标和Hacker News上的活跃讨论，解决了在终端中可视化Mermaid图的问题，并顺应了基于终端的工具趋势。 该项目采用开源许可证，目前处于alpha阶段，部署复杂度适中，无特定硬件要求，易于集成到现有工作流程中。
+Grok Build 是一个开源的 Mermaid 图表终端渲染器，使用 Unicode 字符框绘制来渲染 Mermaid 图表的一个子集。 该项目拥有 369 个星标和活跃的讨论，解决了在终端中可视化 Mermaid 图表的需求，并顺应了基于终端的工具的趋势。 该项目在 Apache 2.0 许可下，处于生产成熟度，部署复杂性相对较低，但需要在终端环境中运行。
 
 
 ## 🌐 背景与生态
 
-Mermaid图广泛应用于文档中的可视化，而终端渲染器因其轻量高效的特点正越来越受欢迎。Grok Build通过提供一种自包含的解决方案来渲染终端中的Mermaid图，填补了这一空白。
+Mermaid 图表在软件文档中广泛使用，而终端渲染器因其轻量级和交互性正越来越受欢迎。Grok Build 通过提供一种在终端中渲染 Mermaid 图表的自包含解决方案来填补这一空白。
 
 
 ## 💬 社区讨论
 
-社区评论显示出兴奋和实际应用案例，开发者在此基础上进行构建，并创建了用于隐私和定制的分支。
+社区评论对该项目的独特方法表示兴奋，开发者在此基础上进行构建，并创建分支以提高隐私性和功能性。
 
 
 ## 📚 参考链接
 
-- [Mermaid (software) - Wikipedia](https://en.wikipedia.org/wiki/Mermaid_(software))
-- [Mermaid | Diagramming and charting tool](https://mermaid.js.org/)
-- [What Are Mermaid Diagrams and Why You Should Use Them - LinkedIn](https://www.linkedin.com/pulse/what-mermaid-diagrams-why-you-should-use-them-maneesha-nirman-xrkrc)
+- [About Mermaid | Mermaid](https://mermaid.js.org/intro/)
+- [What Are Mermaid Diagrams and Why You Should Use Them](https://www.linkedin.com/pulse/what-mermaid-diagrams-why-you-should-use-them-maneesha-nirman-xrkrc)
+- [How AI Agents Run Terminal Commands in VS... | The Stack Underflow](https://thestackunderflow.com/tutorials/what-happens-when-an-agent-runs-a-command/)
 
 <details><summary>📄 查看原文内容</summary>
 

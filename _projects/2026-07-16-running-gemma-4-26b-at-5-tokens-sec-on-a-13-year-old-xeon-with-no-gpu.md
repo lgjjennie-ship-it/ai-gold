@@ -1,20 +1,20 @@
 ---
 layout: default
-title: "高效在旧硬件上运行Gemma 4 26B"
+title: "高效Gemma 4 26B在旧Xeon上的执行"
 date: 2026-07-16T12:00:00+00:00
 discovered_date: 2026-07-16
 slug: 2026-07-16-running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu
 source: hackernews
 category: show-hn
 ai_score: 8.0
-summary: "该项目展示了如何在13年老的Xeon上，不使用GPU的情况下，以每秒5个token的速度运行一个26B的AI模型，利用了高效的AI推理技术。 它因高社区参与度而重要，展示了在低成本硬件上高效运行大型AI模型，可能节省成本和能源。 该项目不需要GPU，并需要一台13年的老Xeon，表明部署复杂度低，硬件要求低。"
-tags: "AI, Optimization, Inference, Efficiency, Hardware"
+summary: "该项目展示了如何在没有GPU的13年旧Xeon上以5个token/秒的速度运行26B Gemma模型，使用了优化的软件技术。 该项目因其在高 trafic 上的显著表现和其创新方法而具有重要意义，即在过时的硬件上高效运行大型AI模型，为开发者提供了一种经济高效的解决方案。 该项目使用基于软件的优化，可能需要特定的配置，但它证明了在没有GPU的旧硬件上的可行性。"
+tags: "LLM, Efficiency, Hardware, Inference, Cost"
 ---
 
-# 高效在旧硬件上运行Gemma 4 26B
+# 高效Gemma 4 26B在旧Xeon上的执行
 
 
-> 该项目展示了如何在13年老的Xeon上，不使用GPU的情况下，以每秒5个token的速度运行一个26B的AI模型，利用了高效的AI推理技术。 它因高社区参与度而重要，展示了在低成本硬件上高效运行大型AI模型，可能节省成本和能源。 该项目不需要GPU，并需要一台13年的老Xeon，表明部署复杂度低，硬件要求低。
+> 该项目展示了如何在没有GPU的13年旧Xeon上以5个token/秒的速度运行26B Gemma模型，使用了优化的软件技术。 该项目因其在高 trafic 上的显著表现和其创新方法而具有重要意义，即在过时的硬件上高效运行大型AI模型，为开发者提供了一种经济高效的解决方案。 该项目使用基于软件的优化，可能需要特定的配置，但它证明了在没有GPU的旧硬件上的可行性。
 
 
 **项目链接**：https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu/
@@ -23,28 +23,28 @@ tags: "AI, Optimization, Inference, Efficiency, Hardware"
 **挖掘日期**：2026-07-16
 **AI 评分**：8.0/10
 **来源**：hackernews
-**标签**：AI, Optimization, Inference, Efficiency, Hardware
+**标签**：LLM, Efficiency, Hardware, Inference, Cost
 
 
 ## 📌 项目详解
 
-该项目展示了如何在13年老的Xeon上，不使用GPU的情况下，以每秒5个token的速度运行一个26B的AI模型，利用了高效的AI推理技术。 它因高社区参与度而重要，展示了在低成本硬件上高效运行大型AI模型，可能节省成本和能源。 该项目不需要GPU，并需要一台13年的老Xeon，表明部署复杂度低，硬件要求低。
+该项目展示了如何在没有GPU的13年旧Xeon上以5个token/秒的速度运行26B Gemma模型，使用了优化的软件技术。 该项目因其在高 trafic 上的显著表现和其创新方法而具有重要意义，即在过时的硬件上高效运行大型AI模型，为开发者提供了一种经济高效的解决方案。 该项目使用基于软件的优化，可能需要特定的配置，但它证明了在没有GPU的旧硬件上的可行性。
 
 
 ## 🌐 背景与生态
 
-在旧硬件上高效运行大型AI模型正变得相关，因为模型越来越大，能源效率变得至关重要。
+随着硬件老化，在旧硬件上运行大型AI模型是一个日益增长的挑战。该项目通过优化模型执行而不依赖GPU来解决这一问题。
 
 
 ## 💬 社区讨论
 
-社区评论表达了对本地运行大型模型的兴奋，并讨论了本地与云推理的成本和速度。
+社区评论强调了未来在本地运行大型模型的可能性，并讨论了本地与云端推理的成本效益。
 
 
 ## 📚 参考链接
 
-- [Mastering LLM Techniques: Inference Optimization | NVIDIA ... What is inference optimization? | Google Cloud Top 5 AI Model Optimization Techniques for Faster, Smarter ... LLM Inference Optimization — Quantization, Distillation ... Inference Optimization: Practical Techniques for Faster, Cost ... LLM Inference Optimization Complete Guide: KV Cache ... LLM Inference Optimization: Cut Cost & Latency at Every Layer ...](https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/)
-- [What is inference optimization? | Google Cloud](https://cloud.google.com/discover/inference-optimization)
+- [README.md · google/ gemma - 4 - 26 B -A 4 B at main](https://huggingface.co/google/gemma-4-26B-A4B/blob/main/README.md)
+- [Gemma 4 — Google DeepMind](https://gemma4.com/)
 
 <details><summary>📄 查看原文内容</summary>
 

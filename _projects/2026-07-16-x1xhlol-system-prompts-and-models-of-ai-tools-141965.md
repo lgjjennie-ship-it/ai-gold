@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "全面的AI系统提示和模型"
+title: "全面的AI系统提示和模型库"
 date: 2026-07-16T12:00:00+00:00
 discovered_date: 2026-07-16
 slug: 2026-07-16-x1xhlol-system-prompts-and-models-of-ai-tools-141965
@@ -9,14 +9,14 @@ category: github-hot
 ai_score: 9.0
 stars: 141965
 repo: "x1xhlol/system-prompts-and-models-of-ai-tools"
-summary: "该项目汇集了各种AI工具的系统提示和AI模型，提供了一个独特的资源，可以通过高级内容或API访问进行 monetization。 该项目因其超过141k个星标和34k个分支的高人气而值得关注，解决了寻找AI工具系统提示和模型的痛点，并顺应了AI发展的趋势。 该项目是开源的，处于生产状态，具有适度的部署复杂性和各种AI工具的集成点。"
-tags: "AI, System Prompts, Tools, Open Source, Models"
+summary: "该库汇集了各种工具和应用程序的系统提示和AI模型，包括Claude Code、CodeBuddy和VSCode Agent，为开发者提供了一个集中的资源，以增强AI功能。 该项目拥有141k星和34k叉，显示了社区对系统提示和AI模型强烈的需求数据，解决了资源分散的痛点，并通过SaaS或API提供清晰的盈利潜力。 该库采用开源许可，处于生产成熟度，开发活跃，无需特殊硬件，但与VSCode和Replit等流行工具集成。"
+tags: "AI, System Prompts, Tools, Open Source, Code"
 ---
 
-# 全面的AI系统提示和模型
+# 全面的AI系统提示和模型库
 
 
-> 该项目汇集了各种AI工具的系统提示和AI模型，提供了一个独特的资源，可以通过高级内容或API访问进行 monetization。 该项目因其超过141k个星标和34k个分支的高人气而值得关注，解决了寻找AI工具系统提示和模型的痛点，并顺应了AI发展的趋势。 该项目是开源的，处于生产状态，具有适度的部署复杂性和各种AI工具的集成点。
+> 该库汇集了各种工具和应用程序的系统提示和AI模型，包括Claude Code、CodeBuddy和VSCode Agent，为开发者提供了一个集中的资源，以增强AI功能。 该项目拥有141k星和34k叉，显示了社区对系统提示和AI模型强烈的需求数据，解决了资源分散的痛点，并通过SaaS或API提供清晰的盈利潜力。 该库采用开源许可，处于生产成熟度，开发活跃，无需特殊硬件，但与VSCode和Repl
 
 
 **项目链接**：https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools
@@ -26,29 +26,29 @@ tags: "AI, System Prompts, Tools, Open Source, Models"
 **AI 评分**：9.0/10
 **Star 数**：141965
 **来源**：github
-**标签**：AI, System Prompts, Tools, Open Source, Models
+**标签**：AI, System Prompts, Tools, Open Source, Code
 
 
 ## 📌 项目详解
 
-该项目汇集了各种AI工具的系统提示和AI模型，提供了一个独特的资源，可以通过高级内容或API访问进行 monetization。 该项目因其超过141k个星标和34k个分支的高人气而值得关注，解决了寻找AI工具系统提示和模型的痛点，并顺应了AI发展的趋势。 该项目是开源的，处于生产状态，具有适度的部署复杂性和各种AI工具的集成点。
+该库汇集了各种工具和应用程序的系统提示和AI模型，包括Claude Code、CodeBuddy和VSCode Agent，为开发者提供了一个集中的资源，以增强AI功能。 该项目拥有141k星和34k叉，显示了社区对系统提示和AI模型强烈的需求数据，解决了资源分散的痛点，并通过SaaS或API提供清晰的盈利潜力。 该库采用开源许可，处于生产成熟度，开发活跃，无需特殊硬件，但与VSCode和Replit等流行工具集成。
 
 
 ## 🌐 背景与生态
 
-系统提示对于定义AI模型的行为至关重要。该项目提供了一个集中的存储库来存储这些提示和模型，这在AI工具变得更加专业和复杂时尤其相关。
+AI中的系统提示定义了AI的角色和行为，随着LLM更多地集成到工作流程中，这是一个至关重要的细分领域。该库通过聚合系统提示解决了对结构化提示日益增长的需求，填补了文档分散留下的空白。
 
 
 ## 💬 社区讨论
 
-社区高度参与，围绕新提示和模型有积极的讨论，表明了强烈的兴趣和实用性。
+社区情绪普遍积极，开发者称赞该库的实用性和组织性，尽管有些人要求更频繁的更新和额外的模型集成。
 
 
 ## 📚 参考链接
 
-- [x1xhlol/system-prompts-and-models-of-ai-tools - GitHub](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)
-- [System Prompts Explained: How AI Models Actually Work Behind ... - Medium](https://medium.com/@david.p.lemon79/system-prompts-explained-how-ai-models-actually-work-behind-the-scenes-2265f14e3eba)
-- [x1xhlol/system-prompts-and-models-of-ai-tools | DeepWiki](https://deepwiki.com/x1xhlol/system-prompts-and-models-of-ai-tools)
+- [System Prompts: Design Patterns and Best Practices](https://tetrate.io/learn/ai/system-prompts-guide)
+- [User prompts vs. system prompts: What’s the difference?](https://www.regie.ai/blog/user-prompts-vs-system-prompts)
+- [System Prompts | AI at Yale](https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform/system-prompts)
 
 <details><summary>📄 查看原文内容</summary>
 
