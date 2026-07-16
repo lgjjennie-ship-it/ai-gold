@@ -197,6 +197,11 @@ class StorageManager:
             background_zh = meta.get("background_zh") or ""
             discussion_zh = meta.get("community_discussion_zh") or ""
             sources = meta.get("sources") or []
+            application_zh = meta.get("application_prospects_zh") or ""
+            tech_stack_zh = meta.get("tech_stack_zh") or ""
+            getting_started_zh = meta.get("getting_started_zh") or ""
+            target_users_zh = meta.get("target_users_zh") or ""
+            similar_projects_zh = meta.get("similar_projects_zh") or ""
 
             display_title = title_zh or title
             card_summary_raw = detailed_zh or ai_summary
@@ -264,6 +269,26 @@ class StorageManager:
             if discussion_zh:
                 body_parts.append("## 💬 社区讨论\n")
                 body_parts.append(discussion_zh + "\n")
+                body_parts.append("")
+            if application_zh:
+                body_parts.append("## 🚀 应用前景\n")
+                body_parts.append(application_zh + "\n")
+                body_parts.append("")
+            if tech_stack_zh:
+                body_parts.append("## 🔧 技术栈\n")
+                body_parts.append(tech_stack_zh + "\n")
+                body_parts.append("")
+            if getting_started_zh:
+                body_parts.append("## 🎯 上手难度\n")
+                body_parts.append(getting_started_zh + "\n")
+                body_parts.append("")
+            if target_users_zh:
+                body_parts.append("## 👥 目标用户\n")
+                body_parts.append(target_users_zh + "\n")
+                body_parts.append("")
+            if similar_projects_zh:
+                body_parts.append("## ⚖️ 类似项目对比\n")
+                body_parts.append(similar_projects_zh + "\n")
                 body_parts.append("")
 
             if sources:
