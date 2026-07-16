@@ -1,0 +1,32 @@
+theme: jekyll-theme-cayman
+title: AI掘金
+description: AI 驱动的热门项目挖掘系统 - 每日午间更新
+baseurl: "/ai-gold"
+url: "https://lgjjennie-ship-it.github.io"
+
+markdown: kramdown
+future: true
+plugins:
+  - jekyll-feed
+feed:
+  path: feed.xml
+exclude:
+  - ".github"
+  - "node_modules"
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "default"
