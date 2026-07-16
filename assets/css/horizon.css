@@ -311,17 +311,44 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
 }
 
-/* --- Daily digest list --- */
+/* --- Section intros (explain relationship between sections) --- */
+.section-intro {
+  margin: -0.8em 0 1.5em 0;
+  line-height: 1.65;
+}
+.section-intro-primary {
+  color: #4a5160;
+  font-size: 0.98em;
+}
+.section-intro-secondary {
+  color: #8a8f9c;
+  font-size: 0.88em;
+}
+.intro-emph {
+  color: var(--hz-accent, #e0652e);
+  font-weight: 600;
+}
+@media (prefers-color-scheme: dark) {
+  .section-intro-primary { color: #b8bccc; }
+  .section-intro-secondary { color: #7a7f8c; }
+}
+
+/* --- Daily digest list (secondary section, visually lighter) --- */
 .daily-digest-list {
   list-style: none;
   padding-left: 0;
+  font-size: 0.92em;
 }
 .daily-digest-list li {
-  padding: 0.4em 0;
-  border-bottom: 1px solid rgba(128,128,128,0.15);
+  padding: 0.35em 0;
+  border-bottom: 1px solid rgba(128,128,128,0.12);
+  color: #6b7280;
 }
 .daily-digest-list li:last-child {
   border-bottom: none;
+}
+@media (prefers-color-scheme: dark) {
+  .daily-digest-list li { color: #8a8f9c; }
 }
 
 /* --- Project archive grid --- */

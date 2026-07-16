@@ -5,290 +5,284 @@ date: 2026-07-16
 lang: zh
 ---
 
-> 从 89 条内容中筛选出 15 条重要资讯。
+> 从 90 条内容中筛选出 15 条重要资讯。
 
 ---
 
-1. [基于多智能体的自主红队平台](#item-1) ⭐️ 9.0/10
-2. [AutoGPT：面向所有人的可访问 AI](#item-2) ⭐️ 9.0/10
-3. [Langflow：AI 代理构建工具](#item-3) ⭐️ 9.0/10
-4. [全面的 AI 工具提示和模型](#item-4) ⭐️ 9.0/10
-5. [Deer-Flow AI 代理框架](#item-5) ⭐️ 9.0/10
-6. [Headroom AI：高效的 LLM 输出压缩](#item-6) ⭐️ 9.0/10
-7. [基于本地模型的私有 AI 应用](#item-7) ⭐️ 9.0/10
-8. [CowAgent：开源 AI 代理 harness](#item-8) ⭐️ 9.0/10
+1. [多智能体红队平台](#item-1) ⭐️ 9.0/10
+2. [AutoGPT：易用的自主 AI](#item-2) ⭐️ 9.0/10
+3. [Langflow：AI 代理工作流构建工具](#item-3) ⭐️ 9.0/10
+4. [全面的 AI 系统提示和模型](#item-4) ⭐️ 9.0/10
+5. [Deer-Flow AI 智能体框架](#item-5) ⭐️ 9.0/10
+6. [Headroom AI 令牌优化工具](#item-6) ⭐️ 9.0/10
+7. [带 RAG 和工具的私有 AI API](#item-7) ⭐️ 9.0/10
+8. [CowAgent AI 助手与代理 harness](#item-8) ⭐️ 9.0/10
 9. [纳米机器人 AI 代理](#item-9) ⭐️ 9.0/10
-10. [OpenMontage：智能视频生产系统](#item-10) ⭐️ 9.0/10
+10. [ToolJet：开源低代码 AI 代理构建平台](#item-10) ⭐️ 9.0/10
 11. [Inkling：开放权重多模态 AI 模型](#item-11) ⭐️ 8.0/10
-12. [Grok Build：开源 Mermaid 终端渲染器](#item-12) ⭐️ 8.0/10
-13. [高效 Gemma 4 26B 在旧硬件上推理](#item-13) ⭐️ 8.0/10
-14. [高性能编解码器：misa77](#item-14) ⭐️ 8.0/10
-15. [AI 驱动的 Mikrotik 网络自动化](#item-15) ⭐️ 7.0/10
+12. [Grok Build：开源终端渲染 Mermaid 图](#item-12) ⭐️ 8.0/10
+13. [统一可扩展服务器管理](#item-13) ⭐️ 8.0/10
+14. [高效在旧硬件上运行 Gemma 4 26B](#item-14) ⭐️ 8.0/10
+15. [Coasty：计算机使用代理 API](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [基于多智能体的自主红队平台](https://github.com/elder-plinius/T3MP3ST) ⭐️ 9.0/10
+## [多智能体红队平台](https://github.com/elder-plinius/T3MP3ST) ⭐️ 9.0/10
 
-T3MP3ST 是一个利用多智能体系统进行攻击性安全测试的自主红队平台，使用 TypeScript 进行开发。 该项目因其 4794 星和 1007 个分支的高人气而具有重要意义，它解决了攻击性安全中的一个关键需求，并具有作为 SaaS 平台的明确盈利潜力。 该平台使用 TypeScript 编写，有 27 个未解决的问题，需要持续开发。其部署复杂性和硬件要求未指定，但它为红队提供了一个独特的多智能体方法。
+一个使用多智能体系统的自主红队平台，用于攻击性安全测试，使用 TypeScript 开发。它利用 AI 智能体模拟攻击和协调任务。 该项目因其强大的吸引力（4800 个星标，1009 个分支）而备受重视，并以新颖的多智能体方法解决了攻击性安全的关键需求。它作为 SaaS 平台具有明确的盈利潜力。 该平台使用 TypeScript 编写，拥有一个不断增长的活跃社区。它需要大量的计算资源和与现有安全工具的集成。
 
-github · elder-plinius · 7月16日 03:07
+github · elder-plinius · 7月16日 05:19
 
-**背景**: 红队中的多智能体系统涉及能够协调和共享信息的专用智能体。随着组织寻求更复杂的攻击性安全工具，这种方法正受到越来越多的关注。
+**背景**: 网络安全中的多智能体系统使用协调的自主智能体来模拟攻击，增强防御能力。该项目基于 AI 驱动红队日益增长的趋势，提供了一种比传统方法更具可扩展性和适应性的方法。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://techinnocens.com/insights/red-teaming-multi-agent-systems">Red-Teaming Multi-Agent AI Systems - TechInnocens</a></li>
-<li><a href="https://splx.ai/blog/red-teaming-multi-chained-ai-agents">Red Teaming AI Agents: Breaking and Fixing Multi-Chained Agent Workflows</a></li>
-<li><a href="https://us-blog.goldtreedev.com/what-is-t3mp3st">What Is T3MP3ST? Autonomous Red Teaming Platform Explained</a></li>
+<li><a href="https://www.ibm.com/think/topics/multiagent-system">What is a Multi-Agent System? | IBM</a></li>
+<li><a href="https://reliaquest.com/cyber-knowledge/what-is-a-multi-agent-system-multi-agent-security-technology-explained/">What is a Multi-Agent System? Multi-Agent Security Technology Explained</a></li>
+<li><a href="https://torq.io/blog/the-multi-agent-system-a-new-era-for-secops/">The Multi-Agent System: A New Era for SecOps</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区表现出浓厚的兴趣，GitHub 上关于功能和改进的讨论非常活跃。安全行业对这种平台有明确的需求。
+**社区讨论**: 社区情绪积极，围绕功能请求和错误报告的讨论活跃，表明高度的参与度和进一步发展的潜力。
 
 **标签**: `#AI`, `#Agent`, `#Offensive-Security`, `#RedTeam`, `#Multi-Agent`
 
 ---
 
 <a id="item-2"></a>
-## [AutoGPT：面向所有人的可访问 AI](https://github.com/Significant-Gravitas/AutoGPT) ⭐️ 9.0/10
+## [AutoGPT：易用的自主 AI](https://github.com/Significant-Gravitas/AutoGPT) ⭐️ 9.0/10
 
-AutoGPT 是一个使用 Python 创建自主 AI 代理的开源项目，利用 GPT 和 Claude 等 LLM 自动执行任务。 AutoGPT 拥有超过 185k 的星标，解决了 AI 可访问性的痛点，顺应了自主 AI 的趋势，并具有明确的盈利路径。 AutoGPT 采用 MIT 许可证，已达到生产成熟度，部署复杂度适中，需要 Python 和 OpenAI 的集成。
+AutoGPT 是一个基于 Python 的开源项目，专注于自主 AI，使用户能够构建具有目标追求和工具使用功能的自主代理。 AutoGPT 因其 185k 星标和 46k 分支的高活跃度而重要，它填补了易用 AI 工具的空白，顺应了自主 AI 的趋势，并通过 SaaS 或 API 具有明确的盈利潜力。 AutoGPT 采用 MIT 许可证，处于 alpha 阶段，部署复杂度中等，需要 Python 且无特定硬件要求，但与 OpenAI 的 GPT 等 LLM 的集成是关键。
 
 github · Significant-Gravitas · 7月15日 22:22
 
-**背景**: AutoGPT 位于自主 AI 生态系统中，该领域正在迅速发展。它填补了传统 AI 工具缺乏自主性的空白，利用 LLM 创造更强大的代理。
+**背景**: 自主 AI 涉及能在有限监督下运行的自主代理，这是一个随着 LLM 进步而发展的领域。AutoGPT 旨在使这项技术平民化，并通过关注易用性脱颖而出。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Large_language_model">Large language model - Wikipedia</a></li>
-<li><a href="https://www.ibm.com/think/topics/large-language-models">What Are Large Language Models (LLMs)? | IBM</a></li>
-<li><a href="https://www.teradata.com/insights/ai-and-machine-learning/what-are-autonomous-agents">What Are Autonomous Agents? How They Work + Use Cases | Teradata</a></li>
+<li><a href="https://en.wikipedia.org/wiki/AI_agent">AI agent - Wikipedia</a></li>
+<li><a href="https://mitsloan.mit.edu/ideas-made-to-matter/agentic-ai-explained">Agentic AI, explained - MIT Sloan</a></li>
+<li><a href="https://www.ibm.com/think/topics/agentic-ai">What is agentic AI? - IBM</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区对 AutoGPT 的潜力感到兴奋，活跃的关于功能和错误修复的讨论表明了强烈的参与度。
+**社区讨论**: 社区表现出浓厚兴趣，活跃的关于功能和错误报告的讨论表明了进一步发展的潜力。
 
-**标签**: `#LLM`, `#Agent`, `#AI`, `#Python`, `#OpenAI`
+**标签**: `#Agentic-AI`, `#Agents`, `#AI`, `#Artificial-Intelligence`, `#Autonomous-Agents`
 
 ---
 
 <a id="item-3"></a>
-## [Langflow：AI 代理构建工具](https://github.com/langflow-ai/langflow) ⭐️ 9.0/10
+## [Langflow：AI 代理工作流构建工具](https://github.com/langflow-ai/langflow) ⭐️ 9.0/10
 
-Langflow 是一个开源的 Python 工具，用于可视化构建和部署 AI 代理和工作流，与主要的 LLMs 和向量数据库集成。 拥有超过 151k 个星标和活跃的开发，Langflow 满足了日益增长的易于使用的 AI 代理开发工具的需求，通过 SaaS 或 API 提供了明确的盈利潜力。 在 MIT 许可证下，Langflow 处于生产成熟度，支持 Python，需要适度的部署复杂性和与各种 AI 工具的集成。
+Langflow 是一个开源的 Python 工具，用于构建和部署 AI 驱动的代理和工作流，利用大型语言模型（LLMs）并与 ChatGPT 等平台集成。 拥有超过 15 万星标和活跃开发，Langflow 解决了 AI 代理和工作流自动化日益增长的需求，通过 SaaS 或 API 提供明确的盈利潜力。 在 MIT 许可证下，Langflow 已达到生产成熟度，部署复杂度适中，需要 Python 和 LLM 集成，但没有特定的硬件要求。
 
 github · langflow-ai · 7月16日 02:51
 
-**背景**: Langflow 属于低代码 AI 构建生态系统，与 Microsoft 的 Agent Framework 和 Google Workspace Studio 等工具竞争。鉴于生成式 AI 的兴起，它对代理和 LLMs 的关注是及时的。
+**背景**: Langflow 位于 AI 生态系统中，通过专注于代理和工作流自动化来解决通用自动化工具留下的空白，随着 LLM 的采用增长，使其当前变得相关。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://grokipedia.com/page/Langflow">Langflow</a></li>
-<li><a href="https://www.langflow.org/">Langflow | Low-code AI builder for agentic and RAG applications</a></li>
+<li><a href="https://www.ibm.com/think/topics/large-language-models">What Are Large Language Models (LLMs)? | IBM</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区高度参与，围绕功能请求、错误报告和集成有活跃的讨论，表明人们很感兴趣使用 Langflow 进行构建。
+**社区讨论**: 社区情绪 overwhelmingly 积极，用户对构建 AI 代理和工作流的潜力感到兴奋，尽管有些人要求更多文档。
 
-**标签**: `#LLM`, `#Agent`, `#Workflow`, `#AI`, `#Python`
+**标签**: `#AI`, `#Agents`, `#Workflows`, `#LLM`, `#SaaS`
 
 ---
 
 <a id="item-4"></a>
-## [全面的 AI 工具提示和模型](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) ⭐️ 9.0/10
+## [全面的 AI 系统提示和模型](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) ⭐️ 9.0/10
 
-该项目提供各种工具（如 Claude、CodeBuddy 和 VSCode Agent）的广泛系统提示和 AI 模型，为开发者提供了一个独特的资源，用于增强 AI 功能。 拥有超过 141k 个星标和 34k 个分支，该项目显示了强烈的社区兴趣和实用性，解决了寻找和组织 AI 提示和模型的痛点，并顺应了 AI 工具集成的趋势。 该项目采用未指明的开源许可证，处于积极开发中（2026 年 7 月最后一次推送），并为各种 AI 工具提供了集成点，无需大量硬件要求。
+该项目汇集了各种 AI 工具的系统提示和 AI 模型，提供了一个独特的资源，可以通过高级内容或 API 访问进行 monetization。 该项目因其超过 141k 个星标和 34k 个分支的高人气而值得关注，解决了寻找 AI 工具系统提示和模型的痛点，并顺应了 AI 发展的趋势。 该项目是开源的，处于生产状态，具有适度的部署复杂性和各种 AI 工具的集成点。
 
 github · x1xhlol · 7月12日 15:42
 
-**背景**: 系统提示是预定义的指令，它们塑造 AI 模型如何响应用户提示，对 LLMs 至关重要。该项目汇集了这些提示和模型，填补了 AI 生态系统中此类资源分散的空白。
+**背景**: 系统提示对于定义 AI 模型的行为至关重要。该项目提供了一个集中的存储库来存储这些提示和模型，这在 AI 工具变得更加专业和复杂时尤其相关。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform/system-prompts">System Prompts | AI at Yale</a></li>
-<li><a href="https://documentation.suse.com/suse-ai/1.0/html/AI-system-prompts/index.html">Guiding the AI Model with System Prompts | SUSE AI 1.0</a></li>
-<li><a href="https://blog.promptlayer.com/system-prompts-and-ai-tools-key-takeaways-and-insight/">System Prompts and AI Tools: Key Takeaways and Insight</a></li>
+<li><a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools">x1xhlol/system-prompts-and-models-of-ai-tools - GitHub</a></li>
+<li><a href="https://medium.com/@david.p.lemon79/system-prompts-explained-how-ai-models-actually-work-behind-the-scenes-2265f14e3eba">System Prompts Explained: How AI Models Actually Work Behind ... - Medium</a></li>
+<li><a href="https://deepwiki.com/x1xhlol/system-prompts-and-models-of-ai-tools">x1xhlol/system-prompts-and-models-of-ai-tools | DeepWiki</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区表现出兴奋，围绕新提示和模型集成的讨论非常活跃，表明强烈的参与度和进一步发展的潜力。
+**社区讨论**: 社区高度参与，围绕新提示和模型有积极的讨论，表明了强烈的兴趣和实用性。
 
-**标签**: `#AI`, `#System Prompts`, `#Tools`, `#Open Source`, `#Code`
+**标签**: `#AI`, `#System Prompts`, `#Tools`, `#Open Source`, `#Models`
 
 ---
 
 <a id="item-5"></a>
-## [Deer-Flow AI 代理框架](https://github.com/bytedance/deer-flow) ⭐️ 9.0/10
+## [Deer-Flow AI 智能体框架](https://github.com/bytedance/deer-flow) ⭐️ 9.0/10
 
-Deer-Flow 是一个开源框架，用于构建能够使用多种工具和子代理进行研究、编码和创建任务的长期 AI 代理，使用 Python 语言，并集成了 LangChain 和 LangGraph 等框架。 Deer-Flow 非常值得关注，因为它拥有 77,145 个星标和 10,000 个分支，活动频繁，解决了复杂长期任务的痛点，顺应了多代理系统的趋势，并显示出作为 SaaS 或企业解决方案的明确盈利潜力。 该框架在开源许可证下，目前处于生产成熟度，部署复杂度适中，需要 Python 语言，并需要与各种 AI 工具和子代理集成。
+Deer-Flow 是一个开源的 Python 框架，用于创建具有记忆和工具集成的复杂长期 AI 智能体，使用沙盒环境和子智能体。 它之所以重要，是因为其高人气（77k 星标，10k 分支），满足了长期 AI 智能体的增长需求，并提供了通过 SaaS 或 API 进行商业化的潜力。 在 Apache 2.0 许可证下，它已达到生产成熟度，部署复杂度适中，需要 Python 并与 LangChain 等工具集成。
 
-github · bytedance · 7月16日 03:38
+github · bytedance · 7月16日 06:09
 
-**背景**: 长期 AI 代理旨在处理复杂的、扩展的任务，Deer-Flow 通过实现多代理协调和子任务委派来解决这一领域。该生态系统包括 LangChain 和 LangGraph 等替代方案，但 Deer-Flow 的全面方法使其脱颖而出。
+**背景**: Deer-Flow 位于自主 AI 生态系统之中，专注于创建自主智能体。它填补了长期任务领域的空白，与 CrewAI 等框架形成差异化。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.epam.com/insights/ai/blogs/how-to-use-long-horizon-agents-in-production">Making Long-Horizon AI Agents Work: A Production Guide for Teams Done With the Hype</a></li>
-<li><a href="https://www.ai21.com/glossary/ai-agent/what-are-long-horizon-tasks/">What are Long-Horizon Tasks? | AI21</a></li>
-<li><a href="https://jumpcloud.com/it-index/what-is-long-horizon-planning-in-ai">What Is Long-Horizon Planning in AI? - JumpCloud</a></li>
+<li><a href="https://blog.gopenai.com/introduction-to-agentic-ai-framework-6ff0c382a768">Introduction to Agentic AI Framework | by Vishal Mysore | GoPenAI</a></li>
+<li><a href="https://mahimairaja.medium.com/understanding-agentic-frameworks-crew-ai-224f62ec711f">Understanding Agentic Frameworks | CrewAI | Medium</a></li>
+<li><a href="https://www.paperclipped.de/en/blog/long-horizon-ai-agents-agi/">Long - Horizon AI Agents Explained | Sequoia Capital AGI Thesis 2026...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区讨论非常积极，开发者对框架的功能感到兴奋，请求更多功能，并正在构建原型。
+**社区讨论**: 社区表现出高度参与，有 987 个开放问题，表明在记忆和工具集成等特性方面的积极开发和兴趣。
 
-**标签**: `#Agent`, `#AI`, `#LLM`, `#Multi-Agent`, `#SuperAgent`
+**标签**: `#Agent`, `#AI`, `#LLM`, `#SuperAgent`, `#Workflow`
 
 ---
 
 <a id="item-6"></a>
-## [Headroom AI：高效的 LLM 输出压缩](https://github.com/headroomlabs-ai/headroom) ⭐️ 9.0/10
+## [Headroom AI 令牌优化工具](https://github.com/headroomlabs-ai/headroom) ⭐️ 9.0/10
 
-Headroom 在 LLM 接收之前压缩工具输出、日志和 RAG 块，为编码代理减少 20%的 token 使用，为 JSON 减少 60-95%的 token 使用，使用 Python 并提供库、代理和 MCP 服务器解决方案。 拥有 59k 星和 4.4k 分支，Headroom 解决了 LLM token 效率的关键痛点，顺应了 AI 优化的趋势，并通过其工具提供了明确的盈利路径。 在 MIT 许可下，Headroom 处于生产成熟度，提供 Python 库、FastAPI 代理和 MCP 服务器部署，具有中等复杂性和与 LangChain 和 OpenAI 的集成。
+该工具在输出、日志和 RAG 数据块到达大型语言模型之前进行压缩，优化令牌使用，支持 Python 语言，并支持库、代理和 MCP 服务器部署。 拥有 59k 星和 4.4k 分叉，Headroom 显示出强烈的社区兴趣和积极开发。它解决了 LLM 高令牌成本的关键痛点，符合 AI 效率趋势，并提供明确的盈利潜力。 在 MIT 许可下，Headroom 处于生产就绪的成熟度，支持 Python 集成，部署复杂度适中，并支持与 LangChain 和 OpenAI 的集成。它为编码代理减少 20% 的令牌，为 JSON 减少 60-95% 的令牌。
 
-github · headroomlabs-ai · 7月15日 22:28
+github · headroomlabs-ai · 7月16日 06:08
 
-**背景**: Headroom 位于 AI 优化生态系统中，解决了 LLM 中 token 效率的挑战。RAG（检索增强生成）和 AI 代理是增长的趋势，而 MCP 服务器增强了模型上下文。Headroom 利用这些技术提供了一个实用的解决方案。
+**背景**: 检索增强生成 \(RAG\) 通过提供相关上下文来增强 LLM。令牌优化对于成本效率至关重要，因为 LLM 按令牌收费。Headroom 填补了预先压缩数据以减少令牌使用的空白。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Retrieval-augmented_generation">Retrieval-augmented generation - Wikipedia</a></li>
 <li><a href="https://aws.amazon.com/what-is/retrieval-augmented-generation/">What is RAG? - Retrieval-Augmented Generation AI Explained - AWS</a></li>
-<li><a href="https://www.quarkip.com/blog/guides/3317">What Is an AI Proxy and Why It Matters in 2025 - quarkip.com</a></li>
+<li><a href="https://cloud.google.com/use-cases/retrieval-augmented-generation">What is Retrieval-Augmented Generation (RAG)? | Google Cloud</a></li>
 
 </ul>
 </details>
 
-**标签**: `#LLM`, `#Compression`, `#RAG`, `#Agent`, `#Tools`
+**社区讨论**: 社区评论强调了人们对该工具效率提升和降低 LLM 成本潜力的兴奋，并要求更多文档和集成支持。
+
+**标签**: `#LLM`, `#Compression`, `#RAG`, `#AI`, `#Tools`
 
 ---
 
 <a id="item-7"></a>
-## [基于本地模型的私有 AI 应用](https://github.com/zylon-ai/private-gpt) ⭐️ 9.0/10
+## [带 RAG 和工具的私有 AI API](https://github.com/zylon-ai/private-gpt) ⭐️ 9.0/10
 
-为基于本地模型的私有 AI 应用提供 API 层，支持 RAG、技能、工具、MCP、文本到 SQL 等功能，并与兼容 OpenAI 的推理服务器配合使用。 拥有 57k 星和 7.6k 分支的高人气，近期活跃，解决了开发者对私有 AI 应用的需求，通过 API 层为本地解决方案提供了清晰的盈利路径。 采用 MIT 许可证，已达到生产成熟度，部署复杂度取决于推理服务器，无特定硬件要求，可与兼容 OpenAI 的服务器集成。
+该项目提供了一个全面的 API，用于构建使用本地模型的私有 AI 应用程序，具有检索增强生成（RAG）、各种工具和文本到 SQL 功能，兼容任何 OpenAI 兼容的推理服务器。 凭借超过 57k 个星标和活跃的开发，它解决了对本地 AI 解决方案日益增长的需求，并作为 SaaS 或企业工具提供了明确的盈利途径。 该 API 使用 Python 构建，可与任何 OpenAI 兼容的推理服务器一起使用，但部署复杂性和硬件要求可能因具体用例而异。
 
 github · zylon-ai · 7月15日 21:03
 
-**背景**: 位于本地 AI 生态系统，填补了私有 AI 应用的市场空白，替代方案包括云解决方案，本地模型推理的最新进展使该项目目前具有相关性。
+**背景**: 该项目填补了私有 AI 应用市场的一个空白，其中数据隐私和本地控制至关重要。RAG、MCP 和文本到 SQL 是 AI 中新兴的趋势，通过集成外部数据源增强了模型的功能。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Retrieval-augmented_generation">Retrieval-augmented generation - Wikipedia</a></li>
-<li><a href="https://aws.amazon.com/what-is/retrieval-augmented-generation/">What is RAG? - Retrieval-Augmented Generation AI Explained - AWS</a></li>
-<li><a href="https://modelcontextprotocol.io/docs/getting-started/intro">What is the Model Context Protocol (MCP)?</a></li>
+<li><a href="https://modelcontextprotocol.io/docs/getting-started/intro">What is the Model Context Protocol (MCP)? - Model Context Protocol</a></li>
+<li><a href="https://www.ibm.com/think/topics/retrieval-augmented-generation">What is RAG (Retrieval Augmented Generation)? | IBM</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#API`, `#On-Premise`, `#RAG`, `#Tools`
+**社区讨论**: 社区表现出浓厚的兴趣，开发活动活跃，贡献者数量不断增长。人们对本地 AI 解决方案的潜力以及 API 的多功能性感到兴奋。
+
+**标签**: `#AI`, `#API`, `#On-Premise`, `#PrivateAI`, `#Tools`
 
 ---
 
 <a id="item-8"></a>
-## [CowAgent：开源 AI 代理 harness](https://github.com/zhayujie/CowAgent) ⭐️ 9.0/10
+## [CowAgent AI 助手与代理 harness](https://github.com/zhayujie/CowAgent) ⭐️ 9.0/10
 
-CowAgent 是一个开源的 AI 助手和代理 harness，能够规划任务、运行工具，并利用记忆和知识自我进化，支持多种模型和渠道。 CowAgent 值得关注，因为它拥有超过 45k 星和 10k 分叉的高人气，解决了开发者需要可扩展 AI 代理的痛点，并且通过 SaaS 或 API 提供具有明确的盈利潜力。 CowAgent 轻量级、可扩展，提供一行安装，使用 Python 编写，具有宽松的许可证，表明它已达到生产成熟度。
+CowAgent 是一个开源 AI 助手和代理 harness，它可以规划任务、运行工具，并利用记忆和知识自我进化，支持多模型和多渠道交互。 该项目现在值得关注，因为它拥有超过 45k 星和 10k 分叉的高人气，解决了创建轻量级、可扩展 AI 助手的痛点，并乘着多代理系统的趋势，具有明确的盈利潜力。 CowAgent 采用 MIT 许可，已达到生产成熟度，支持 Python 语言，提供一键安装的便捷性，但需要与外部工具和模型进行集成。
 
 github · zhayujie · 7月14日 10:03
 
-**背景**: AI 代理 harness 是一种软件基础设施，它通过管理工具使用、记忆和状态持久性，使大型语言模型 \(LLMs\) 能够作为代理运行。CowAgent 填补了提供可扩展 AI 代理的空白，利用了多模型和多渠道 AI 助手的新进展。
+**背景**: AI 代理 harness 提供管理 AI 模型生命周期、工具访问和安全的 infra，使交互比传统回合制模型更复杂。多模型和多渠道交互是 AI 中新兴的趋势，用于处理多种数据类型和用户输入。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Agent_harness">Agent harness - Wikipedia</a></li>
-<li><a href="https://www.langchain.com/blog/the-anatomy-of-an-agent-harness">The Anatomy of an Agent Harness</a></li>
+<li><a href="https://harness-engineering.ai/blog/agent-harness-complete-guide/">The Complete Guide to Agent Harness: What It Is and Why It ...</a></li>
 <li><a href="https://www.databricks.com/blog/ai-harness">What is an AI Agent Harness? | Databricks Blog</a></li>
+<li><a href="https://www.datacamp.com/blog/agent-harness">What Is an Agent Harness? A Beginner&#x27;s Guide | DataCamp</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#Agent`, `#LLM`, `#Tools`, `#Extensible`
+**社区讨论**: 社区评论表明了强烈的兴趣和积极开发，用户正在请求功能、报告错误并探索与各种 AI 模型的集成。
+
+**标签**: `#AI`, `#Agent`, `#LLM`, `#Tools`, `#Multi-Agent`
 
 ---
 
 <a id="item-9"></a>
 ## [纳米机器人 AI 代理](https://github.com/HKUDS/nanobot) ⭐️ 9.0/10
 
-纳米机器人是一个用 Python 编写的轻量级、开源 AI 代理，旨在通过集成 OpenAI 的 Codex 等 LLM 来增强工具、聊天和工作流程。 凭借 45.6k 个星标和近期活动，纳米机器人满足了日益增长的定制化 AI 代理在 workflow 中的需求，顺应了 LLM 集成的趋势，并提供了明确的 SaaS 盈利路径。 纳米机器人遵循开源许可条款，已达到生产成熟度，部署复杂度适中，需要 Python 语言并与现有平台集成。
+纳米机器人是一个用 Python 构建的轻量级、开源 AI 代理，用于使用像 OpenAI 的 GPT-4 这样的 LLM 自动化工具、聊天和工作流程。 拥有超过 45k 个星标和 8k 个分支，纳米机器人在 AI 代理领域显示出强劲的吸引力，解决了工具自动化的痛点，并乘上了 LLM 集成的浪潮，提供了明确的 SaaS 盈利潜力。 纳米机器人遵循开源许可条款，已达到生产成熟度，部署复杂度适中，需要 Python 和 LLM API 的集成，但未提及特定硬件要求。
 
-github · HKUDS · 7月15日 17:11
+github · HKUDS · 7月16日 05:54
 
-**背景**: 纳米机器人运作于 AI 代理开发的细分领域，其中像 OpenClaw 这样的工具提供类似功能，但通常需要自托管。LLM 的兴起使这类代理更加可行。
+**背景**: 纳米机器人属于不断发展的 AI 代理生态系统，这些代理利用 LLM 进行自动化。它与 OpenClaw 等框架竞争，后者同样使用 LLM 但提供更广泛的服务集成。LLM 的兴起使得此类专业代理更加可行。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Large_language_model">Large language model - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenClaw">OpenClaw - Wikipedia</a></li>
 <li><a href="https://openclaw.ai/">OpenClaw — Personal AI Assistant</a></li>
+<li><a href="https://openclaw.im/">Openclaw - Open -Source AI Automation Framework | Build Your Own...</a></li>
 
 </ul>
 </details>
+
+**社区讨论**: 社区讨论非常活跃，用户对自动化功能感到兴奋，并请求更多流行工具的集成选项。
 
 **标签**: `#AI`, `#Agent`, `#LLM`, `#OpenAI`, `#Tools`
 
 ---
 
 <a id="item-10"></a>
-## [OpenMontage：智能视频生产系统](https://github.com/calesthio/OpenMontage) ⭐️ 9.0/10
+## [ToolJet：开源低代码 AI 代理构建平台](https://github.com/ToolJet/ToolJet) ⭐️ 9.0/10
 
-OpenMontage 是一个开源的智能视频生产系统，将 AI 编程助手转变为完整视频生产工作室，拥有 12 条管道、52 个工具和 500 多个代理技能。 OpenMontage 因其 39k 星和 4.7k 分支的高人气、解决视频生产自动化痛点、顺应智能代理 AI 趋势以及作为 SaaS 或 API 服务的清晰盈利潜力而值得关注。 该项目采用开源许可证，目前处于生产成熟度，部署复杂性取决于所使用的特定管道和工具，并需要标准硬件来运行 AI 模型。
+ToolJet 是一个使用 JavaScript 和 TypeScript 构建的开源低代码平台，使开发者能够使用 ReactJS 和 NodeJS 等框架创建内部工具、仪表板和 AI 代理。 拥有 38216 个星标和 5171 个分支，ToolJet 显示出高人气，并解决了企业内部工具开发痛点，借助低代码和 AI 集成的趋势，并拥有明确的盈利路径。 在 MIT 许可证下，ToolJet 已达到生产成熟度，部署复杂性取决于具体用例，支持自托管解决方案并与 Kubernetes 集成。
 
-github · calesthio · 7月12日 17:48
+github · ToolJet · 7月16日 06:04
 
-**背景**: 智能视频生产系统利用 AI 自动化视频创建任务，随着 AI 的进步和高效内容生产的需求，这一领域正在增长。OpenMontage 通过将 AI 编程助手集成到全面的视频生产工作流程中而脱颖而出。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.imagine.art/blogs/agentic-ai-in-video-production">Agentic AI in Video Production: How AI Agents Run the ...</a></li>
-<li><a href="https://www.jackvaughan.com/agentic-video">Agentic Video | What It Is, Tools &amp; Why It Matters | Jack ...</a></li>
-<li><a href="https://pyshine.com/OpenMontage-Agentic-Video-Production-System/">OpenMontage - Agentic Video Production System with 12 ...</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 社区表现出浓厚兴趣，围绕功能请求、错误报告和集成指南的积极讨论表明，用户群体充满活力且参与度高。
-
-**标签**: `#Agent`, `#AI`, `#Video`, `#Production`, `#Open-Source`
+**标签**: `#Low-Code`, `#AI`, `#Internal-Tools`, `#Workflow-Automation`, `#NodeJS`
 
 ---
 
 <a id="item-11"></a>
 ## [Inkling：开放权重多模态 AI 模型](https://thinkingmachines.ai/news/introducing-inkling/) ⭐️ 8.0/10
 
-Inkling 是一个支持包括音频在内的多模态能力的开放权重 AI 模型，设计用于使用 Tinker 等框架进行定制和微调。 Inkling 因其开放权重方法和多模态支持（尤其是音频）而脱颖而出，填补了可定制 AI 解决方案的空白。其高社区参与度和通过 Tinker 微调的明确盈利潜力使其具有重要意义。 Inkling 在开放许可证下提供，适用于生产使用，并可在 Tinker 上进行微调。它需要大量的计算资源和与多模态框架的集成。
+Inkling 是一个支持多模态功能和微调的开放权重 AI 模型，专为定制和企业使用而设计。 Inkling 因其高参与度、积极的社区反馈以及定制潜力而值得关注，它解决了开放权重模型中的真实需求，并通过企业定制具有明确的盈利潜力。 Inkling 在开放许可证下提供，处于生产成熟度，并支持在 Tinker 等平台上进行微调，适合企业应用。
 
 hackernews · vimarsh6739 · 7月15日 18:12 · [社区讨论](https://news.ycombinator.com/item?id=48924912)
 
-**背景**: 开放权重模型正越来越受欢迎，因为它们允许定制和微调，这对企业应用至关重要。多模态 AI，尤其是支持音频的，是 AI 开发中的一个增长趋势。
+**背景**: 开放权重 AI 模型提供对训练参数的访问，与传统开源模型不同。多模态 AI 整合多种数据类型进行更全面的处理，这一趋势在企业应用中越来越受欢迎。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.analyticsvidhya.com/blog/2025/04/open-weight-models/">What are Open Source and Open Weight Models ? | Analytics Vidhya</a></li>
-<li><a href="https://aiproductivity.ai/glossary/open-weights-model/">What Is an Open Weights Model ? Definition and Examples</a></li>
-<li><a href="https://www.ibm.com/think/topics/multimodal-ai">What is Multimodal AI? | IBM</a></li>
+<li><a href="https://medium.com/@tinholt/the-new-competitive-edge-open-weight-ai-models-and-their-impact-on-businesses-2c7220c92191">The New Competitive Edge: Open - Weight AI Models and... | Medium</a></li>
+<li><a href="https://dn75rr69j9vc.cloudfront.net/blog/how-multimodal-ai-works">Multimodal AI : How It Works and When It ’s Used | Yellow</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论对 Inkling 的多模态和开放权重能力表示兴奋，并建议本地部署和与其他模型的比较。人们对其定制和微调功能表现出浓厚兴趣。
+**社区讨论**: 社区评论强调了 Inkling 的多模态能力，特别是其对音频的支持，并建议了本地部署选项。人们对其作为微调和定制基础的潜力感到兴奋。
 
-**标签**: `#LLM`, `#Multimodal`, `#Audio`, `#OpenWeights`, `#Customization`
+**标签**: `#LLM`, `#Multimodal`, `#OpenWeights`, `#Customization`, `#Enterprise`
 
 ---
 
 <a id="item-12"></a>
-## [Grok Build：开源 Mermaid 终端渲染器](https://github.com/xai-org/grok-build) ⭐️ 8.0/10
+## [Grok Build：开源终端渲染 Mermaid 图](https://github.com/xai-org/grok-build) ⭐️ 8.0/10
 
-Grok Build 是一个开源项目，提供了一个自包含的终端渲染器，用于渲染 Mermaid 图表的子集，使用 Unicode 框绘图符。 Grok Build 值得关注，因其高人气（370 条评论和多个分支），解决了终端渲染 Mermaid 图表的细分领域，并具有通过 SaaS 或 API 集成的清晰盈利路径。 该项目采用开源许可证，目前处于生产成熟度，部署复杂度适中，无特定硬件要求。它与 Mermaid 语法集成良好，但在渲染所有图表类型方面存在限制。
+Grok Build 是一个开源项目，提供了一个自包含的终端渲染器，用于渲染 Mermaid 图，使用 Unicode 框线绘制 Mermaid 图表类型的子集。 Grok Build 拥有 369 个星标和 Hacker News 上的活跃讨论，解决了在终端中可视化 Mermaid 图的问题，并顺应了基于终端的工具趋势。 该项目采用开源许可证，目前处于 alpha 阶段，部署复杂度适中，无特定硬件要求，易于集成到现有工作流程中。
 
 hackernews · skp1995 · 7月15日 20:24 · [社区讨论](https://news.ycombinator.com/item?id=48926590)
 
-**背景**: Mermaid 图表是基于文本的创建图表和流程图的工具，在软件文档中很受欢迎。终端渲染器将这些图表转换为终端环境中的视觉格式。Grok Build 通过提供自包含解决方案填补了这一生态系统的空白。
+**背景**: Mermaid 图广泛应用于文档中的可视化，而终端渲染器因其轻量高效的特点正越来越受欢迎。Grok Build 通过提供一种自包含的解决方案来渲染终端中的 Mermaid 图，填补了这一空白。
 
 <details><summary>参考链接</summary>
 <ul>
@@ -299,79 +293,79 @@ hackernews · skp1995 · 7月15日 20:24 · [社区讨论](https://news.ycombina
 </ul>
 </details>
 
-**社区讨论**: 社区评论显示出兴奋和实用性，开发者构建分支以增强隐私和功能。一些人表达了对数据处理的怀疑，而其他人则推荐了替代方案。
+**社区讨论**: 社区评论显示出兴奋和实际应用案例，开发者在此基础上进行构建，并创建了用于隐私和定制的分支。
 
 **标签**: `#LLM`, `#Tools`, `#Mermaid`, `#Terminal`, `#Code`
 
 ---
 
 <a id="item-13"></a>
-## [高效 Gemma 4 26B 在旧硬件上推理](https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu/) ⭐️ 8.0/10
+## [统一可扩展服务器管理](https://planetscale.com/blog/making-768-servers-look-like-1) ⭐️ 8.0/10
 
-该项目展示了如何在没有 GPU 的 13 年旧 Xeon 处理器上以 5 个 token/秒的速度运行 26B Gemma 模型，使用节能 AI 推理技术。 该项目因其高参与度（257 分，169 条评论）和创新的方法而具有重要意义，即在过时的硬件上运行大型 AI 模型，解决了计算成本的痛点，并提供了明确的盈利潜力。 该项目使用针对旧 CPU 的特定优化技术，采用开源许可证，处于生产阶段，但需要仔细调整以实现硬件兼容性。
+该项目通过使 768 台服务器看起来像单个单元来简化管理，使用基于代理的方法来处理跨服务器的请求和数据分布。 它解决了管理大规模服务器基础设施的痛点，在 Hacker News 上获得高关注度，并具有明确的 SaaS 盈利路径，对企业需要可扩展解决方案具有重要意义。 该项目已投入生产，采用宽松的许可证，需要适度的部署复杂性和与现有微服务架构的集成。
 
-hackernews · neomindryan · 7月15日 15:34 · [社区讨论](https://news.ycombinator.com/item?id=48922434)
+hackernews · hisamafahri · 7月16日 03:36 · [社区讨论](https://news.ycombinator.com/item?id=48930075)
 
-**背景**: Gemma 4 模型专为高性能 AI 任务设计，通常在 GPU 上部署。该项目将重点转向旧硬件，通过降低硬件要求使大型 AI 模型更易于访问。
+**背景**: 分布式系统和微服务架构在企业环境中越来越普遍，其中管理大型服务器集群具有挑战性。该项目通过提供复杂基础设施的统一接口来填补这一空白。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.intel.com/content/www/us/en/developer/articles/guide/xeon-performance-tuning-and-solution-guides.html">Tuning Guides for Intel® Xeon® Scalable Processor-Based Systems</a></li>
-<li><a href="https://www.phoronix.com/review/intel-latency-optimized-mode">Intel Xeon 6 Performance Feature Benchmarks: Latency ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Distributed_Systems">Distributed Systems</a></li>
+<li><a href="https://www.baeldung.com/cs/distributed-systems-guide">Fundamentals of Distributed Systems | Baeldung on Computer Science</a></li>
+<li><a href="https://www.atlassian.com/microservices/microservices-architecture/distributed-architecture">What is a distributed system ? | Atlassian</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论强调了未来 AI 模型在消费级硬件上运行的可能性，讨论了本地与云端推理的成本效益，并分享了类似的优化基准测试。
+**社区讨论**: 开发者对序列处理、跨分片事务和外键管理感到好奇，表明了高度参与和对实际实施细节的兴趣。
 
-**标签**: `#AI`, `#Inference`, `#Optimization`, `#Hardware`, `#Efficiency`
+**标签**: `#Distributed Systems`, `#Scalability`, `#Infrastructure`, `#Microservices`, `#SaaS`
 
 ---
 
 <a id="item-14"></a>
-## [高性能编解码器：misa77](https://github.com/welcome-to-the-sunny-side/misa77) ⭐️ 8.0/10
+## [高效在旧硬件上运行 Gemma 4 26B](https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu/) ⭐️ 8.0/10
 
-misa77 是一种高性能编解码器，其解码速度比 LZ4 快 2 倍，同时保持了有竞争力的压缩率，针对乱序核心进行了优化。 该项目因其 139 个星标和 HN 上的活跃社区参与而值得关注。它解决了性能关键应用中对更快解压缩的需求，并提供了明确的盈利路径。 该编解码器采用实验性许可，目前处于早期阶段（v0.x.y），压缩速度慢但解压缩速度快。它需要仔细处理输入验证，并针对乱序核心进行了优化。
+该项目展示了如何在 13 年老的 Xeon 上，不使用 GPU 的情况下，以每秒 5 个 token 的速度运行一个 26B 的 AI 模型，利用了高效的 AI 推理技术。 它因高社区参与度而重要，展示了在低成本硬件上高效运行大型 AI 模型，可能节省成本和能源。 该项目不需要 GPU，并需要一台 13 年的老 Xeon，表明部署复杂度低，硬件要求低。
 
-hackernews · nonadhocproblem · 7月15日 15:58 · [社区讨论](https://news.ycombinator.com/item?id=48922838)
+hackernews · neomindryan · 7月15日 15:34 · [社区讨论](https://news.ycombinator.com/item?id=48922434)
 
-**背景**: misa77 位于压缩编解码器生态系统之中，与 LZ4 和 Snappy 等成熟选项竞争。其相关性是由现代计算中对高吞吐量解压缩日益增长的需求驱动的，特别是在云和数据中心环境中。
+**背景**: 在旧硬件上高效运行大型 AI 模型正变得相关，因为模型越来越大，能源效率变得至关重要。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://commutevolt.com/getting-started/show-hn-misa77-a-codec-that-decodes-2x-faster-than-lz4-at-better-ratios/">Show HN: misa 77 - a codec that decodes 2x faster... - Commute Volt</a></li>
-<li><a href="https://www.scien.cx/2026/07/15/breaking-down-misa77-a-new-codec-decoding-2x-faster-than-lz4-with-better-ratios/">Breaking Down misa 77 : A New Codec Decoding 2x Faster Than...</a></li>
-<li><a href="https://github.com/welcome-to-the-sunny-side/misa77?ref=upstract.com">GitHub - welcome-to-the-sunny-side/ misa 77 at upstract.com · GitHub</a></li>
+<li><a href="https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/">Mastering LLM Techniques: Inference Optimization | NVIDIA ... What is inference optimization? | Google Cloud Top 5 AI Model Optimization Techniques for Faster, Smarter ... LLM Inference Optimization — Quantization, Distillation ... Inference Optimization: Practical Techniques for Faster, Cost ... LLM Inference Optimization Complete Guide: KV Cache ... LLM Inference Optimization: Cut Cost &amp; Latency at Every Layer ...</a></li>
+<li><a href="https://cloud.google.com/discover/inference-optimization">What is inference optimization? | Google Cloud</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论对速度提升表示兴奋，但也指出了压缩和解压缩速度之间的权衡。人们很感兴趣地想知道它与其他编解码器（如 Oodle 和 Selkie）相比的表现如何。
+**社区讨论**: 社区评论表达了对本地运行大型模型的兴奋，并讨论了本地与云推理的成本和速度。
 
-**标签**: `#Codec`, `#Performance`, `#Compression`, `#Decompression`, `#Optimization`
+**标签**: `#AI`, `#Optimization`, `#Inference`, `#Efficiency`, `#Hardware`
 
 ---
 
 <a id="item-15"></a>
-## [AI 驱动的 Mikrotik 网络自动化](https://blog.greg.technology/2026/07/14/llm-networking-with-mikrotik.html) ⭐️ 7.0/10
+## [Coasty：计算机使用代理 API](https://coasty.ai/docs) ⭐️ 8.0/10
 
-该项目使用大型语言模型（LLM）自动化配置 Mikrotik 网络设备，利用自然语言处理将用户指令翻译成具体的 RouterOS 命令。 它通过简化设备配置解决了网络管理员的一个重大痛点，在 Hacker News 上获得了 27 条评论，并显示出通过 SaaS 或 API 实现货币化的清晰路径。 该项目处于 alpha 阶段，需要用户明确 Mikrotik 版本兼容性，并且由于需要精确的自然语言输入，可能涉及部署复杂性。
+Coasty 是一个 API，允许开发者创建计算机使用代理，以自然语言任务自动化遗留桌面和网页应用程序的工作流程。 该项目因其在高 trafic 上的 7 条 Hacker News 评论以及对处理遗留软件的开发者的明显效用而值得关注。它提供了一种无需 API 自动化工作流程的新方法，并通过 SaaS 或 API 服务具有潜在的盈利能力。 该 API 已获授权用于生产，处于 Beta 阶段，并需要与现有系统集成。它支持多个环境，并可以处理具有人工批准选项的复杂工作流程。
 
-hackernews · gregsadetsky · 7月15日 22:23 · [社区讨论](https://news.ycombinator.com/item?id=48927915)
+hackernews · nkov47 · 7月15日 15:51 · [社区讨论](https://news.ycombinator.com/item?id=48922706)
 
-**背景**: Mikrotik 设备在小到中型网络中广泛使用，其配置传统上需要 CLI 专业知识。LLM 的兴起为这一过程提供了一种新颖的方式，尽管在将抽象的网络概念转化为可操作的命令方面仍存在挑战。
+**背景**: Coasty 解决了缺乏 API 的遗留应用程序自动化挑战。与传统的 RPA 不同，它使用自然语言处理和计算机视觉来与用户界面交互，使其更能适应应用程序行为的变化。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.ibm.com/think/topics/large-language-models">What are large language models (LLMs)? - IBM</a></li>
-<li><a href="https://cloudraya.com/en/blog/what-is-mikrotik/">What is MikroTik? Learn It’s Function and Advantages Here</a></li>
-<li><a href="https://mikrotik.com/">MikroTik · Routers and Wireless</a></li>
+<li><a href="https://learnllm.dev/learn/advanced/computer-use-agents">Computer Use Agents : When AI Navigates GUIs</a></li>
+<li><a href="https://docs.stagehand.dev/examples/computer_use">Computer Use Agents - Stagehand</a></li>
+<li><a href="https://www.arunbaby.com/ai-agents/0023-ui-automation-agents/">UI Automation Agents - Arun Baby</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 开发者强调了版本特定语法和用户清晰度的必要性，指出虽然该工具显示出前景，但需要迭代改进和用户专业知识才能获得最佳结果。
+**社区讨论**: 社区评论表明对它与其他 CUA API 差异化的怀疑，需要更清晰的功能和使用场景区分。
 
-**标签**: `#LLM`, `#Networking`, `#Mikrotik`, `#Automation`, `#AI`
+**标签**: `#AI`, `#Agent`, `#Automation`, `#Desktop`, `#Web`
 
 ---

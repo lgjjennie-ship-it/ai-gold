@@ -1,37 +1,53 @@
 ---
 layout: default
-title: "Running Gemma 4 26B at 5 tokens/sec on a 13-year-old Xeon with no GPU"
+title: "高效在旧硬件上运行Gemma 4 26B"
 date: 2026-07-16T12:00:00+00:00
 discovered_date: 2026-07-16
 slug: 2026-07-16-running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu
 source: hackernews
 category: show-hn
 ai_score: 8.0
-summary: "This project shows how to run a 26B Gemma model at 5 tokens/sec on a 13-year-old Xeon without a GPU, demonstrating energy-efficient AI inference."
-tags: "AI, Inference, Optimization, Hardware, Efficiency"
+summary: "该项目展示了如何在13年老的Xeon上，不使用GPU的情况下，以每秒5个token的速度运行一个26B的AI模型，利用了高效的AI推理技术。 它因高社区参与度而重要，展示了在低成本硬件上高效运行大型AI模型，可能节省成本和能源。 该项目不需要GPU，并需要一台13年的老Xeon，表明部署复杂度低，硬件要求低。"
+tags: "AI, Optimization, Inference, Efficiency, Hardware"
 ---
 
-# Running Gemma 4 26B at 5 tokens/sec on a 13-year-old Xeon with no GPU
-
-**链接**: https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu/
-
-**作者**: neomindryan
-
-**发布时间**: 2026-07-15T15:34:05Z
-
-**采集日期**: 2026-07-16
+# 高效在旧硬件上运行Gemma 4 26B
 
 
-## AI 摘要
-
-This project shows how to run a 26B Gemma model at 5 tokens/sec on a 13-year-old Xeon without a GPU, demonstrating energy-efficient AI inference.
-
-## AI 评价
-
-High engagement (257 score, 169 comments) and innovative approach to running large AI models on outdated hardware demonstrate significant traction and utility. The project highlights a novel solution for reducing computational costs, which is a real pain point for developers, and has clear extension opportunities into broader hardware optimization strategies.
+> 该项目展示了如何在13年老的Xeon上，不使用GPU的情况下，以每秒5个token的速度运行一个26B的AI模型，利用了高效的AI推理技术。 它因高社区参与度而重要，展示了在低成本硬件上高效运行大型AI模型，可能节省成本和能源。 该项目不需要GPU，并需要一台13年的老Xeon，表明部署复杂度低，硬件要求低。
 
 
-## 原文内容
+**项目链接**：https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu/
+**作者**：neomindryan
+**发布时间**：2026-07-15T15:34:05Z
+**挖掘日期**：2026-07-16
+**AI 评分**：8.0/10
+**来源**：hackernews
+**标签**：AI, Optimization, Inference, Efficiency, Hardware
+
+
+## 📌 项目详解
+
+该项目展示了如何在13年老的Xeon上，不使用GPU的情况下，以每秒5个token的速度运行一个26B的AI模型，利用了高效的AI推理技术。 它因高社区参与度而重要，展示了在低成本硬件上高效运行大型AI模型，可能节省成本和能源。 该项目不需要GPU，并需要一台13年的老Xeon，表明部署复杂度低，硬件要求低。
+
+
+## 🌐 背景与生态
+
+在旧硬件上高效运行大型AI模型正变得相关，因为模型越来越大，能源效率变得至关重要。
+
+
+## 💬 社区讨论
+
+社区评论表达了对本地运行大型模型的兴奋，并讨论了本地与云推理的成本和速度。
+
+
+## 📚 参考链接
+
+- [Mastering LLM Techniques: Inference Optimization | NVIDIA ... What is inference optimization? | Google Cloud Top 5 AI Model Optimization Techniques for Faster, Smarter ... LLM Inference Optimization — Quantization, Distillation ... Inference Optimization: Practical Techniques for Faster, Cost ... LLM Inference Optimization Complete Guide: KV Cache ... LLM Inference Optimization: Cut Cost & Latency at Every Layer ...](https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/)
+- [What is inference optimization? | Google Cloud](https://cloud.google.com/discover/inference-optimization)
+
+<details><summary>📄 查看原文内容</summary>
+
 
 
 --- Top Comments ---
@@ -45,3 +61,5 @@ High engagement (257 score, 169 comments) and innovative approach to running lar
 [hparadiz]: Here&#x27;s my report running several different models on a dual Xeon with 256 GB of DDR4 and no GPU.  https:&#x2F;&#x2F;gist.github.com&#x2F;hparadiz&#x2F;f3596d00a62d8ebb2dadcc46ee5...
 
 [throwaway2027]: That&#x27;s quite slow I&#x27;m getting 8-12 t&#x2F;s on a 13 year old CPU. (Speed varies by context size and other settings who knows)  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48354801
+
+</details>
