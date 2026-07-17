@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lgjjennie-ship-it.github.io/ai-gold/sitemap.xml
