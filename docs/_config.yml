@@ -8,8 +8,10 @@ markdown: kramdown
 future: true
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 feed:
   path: feed.xml
+sitemap: true
 exclude:
   - ".github"
   - "node_modules"
