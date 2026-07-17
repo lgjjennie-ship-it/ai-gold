@@ -6,71 +6,65 @@ discovered_date: 2026-07-17
 slug: 2026-07-17-launch-hn-traceforce-yc-s26-company-wide-security-monitoring-for-ai-apps
 source: hackernews
 category: show-hn
-ai_score: 9.0
-summary: "Traceforce追踪AI应用的使用情况及其与数据源的联系，提供全公司的安全监控。它使用轻量级二进制文件和浏览器扩展收集实时数据，并提供一个开源的动态MCP渗透测试工具。 Traceforce通过提供对AI应用及其连接的可见性和控制，解决了AI应用安全的一个关键需求。它在Hacker News上获得了很高的关注度，并有一个清晰的SaaS就绪模式，针对企业客户。 Traceforce是开源的，二进制文件使用Go语言编写，浏览器扩展使用Node JS编写，已在生产环境中部署超过1,000台设备。它需要很少的硬件资源，并与现有的安全工具集成。"
-tags: "AI, Security, Monitoring, MCP, Tools"
+ai_score: 8.0
+summary: "Traceforce通过轻量级二进制程序和浏览器扩展，为AI应用提供全公司范围内的安全监控，实现设备上AI应用的可见性和控制。 Traceforce在高 trafic 的 Hacker News 上获得了高度关注，解决了AI应用安全的关键痛点，提供独特的可见性和控制能力，并拥有清晰的SaaS盈利模式，针对企业安全需求。 Traceforce采用开源许可模式，目前处于Beta阶段，需要在每台设备上部署，并与现有安全工具集成以增强监控。"
+tags: "AI, Security, Monitoring, Tools, Enterprise"
 ---
 
 # AI应用安全监控工具
 
 
-> Traceforce追踪AI应用的使用情况及其与数据源的联系，提供全公司的安全监控。它使用轻量级二进制文件和浏览器扩展收集实时数据，并提供一个开源的动态MCP渗透测试工具。 Traceforce通过提供对AI应用及其连接的可见性和控制，解决了AI应用安全的一个关键需求。它在Hacker News上获得了很高的关注度，并有一个清晰的SaaS就绪模式，针对企业客户。 Traceforce是开源的，二进
+> Traceforce通过轻量级二进制程序和浏览器扩展，为AI应用提供全公司范围内的安全监控，实现设备上AI应用的可见性和控制。 Traceforce在高 trafic 的 Hacker News 上获得了高度关注，解决了AI应用安全的关键痛点，提供独特的可见性和控制能力，并拥有清晰的SaaS盈利模式，针对企业安全需求。 Traceforce采用开源许可模式，目前处于Beta阶段，需要在每台设备上部
 
 
 **项目链接**：https://news.ycombinator.com/item?id=48937020
 **作者**：XiaHua
 **发布时间**：2026-07-16T16:52:16Z
 **挖掘日期**：2026-07-17
-**AI 评分**：9.0/10
+**AI 评分**：8.0/10
 **来源**：hackernews
-**标签**：AI, Security, Monitoring, MCP, Tools
+**标签**：AI, Security, Monitoring, Tools, Enterprise
 
 
 ## 📌 项目详解
 
-Traceforce追踪AI应用的使用情况及其与数据源的联系，提供全公司的安全监控。它使用轻量级二进制文件和浏览器扩展收集实时数据，并提供一个开源的动态MCP渗透测试工具。 Traceforce通过提供对AI应用及其连接的可见性和控制，解决了AI应用安全的一个关键需求。它在Hacker News上获得了很高的关注度，并有一个清晰的SaaS就绪模式，针对企业客户。 Traceforce是开源的，二进制文件使用Go语言编写，浏览器扩展使用Node JS编写，已在生产环境中部署超过1,000台设备。它需要很少的硬件资源，并与现有的安全工具集成。
+Traceforce通过轻量级二进制程序和浏览器扩展，为AI应用提供全公司范围内的安全监控，实现设备上AI应用的可见性和控制。 Traceforce在高 trafic 的 Hacker News 上获得了高度关注，解决了AI应用安全的关键痛点，提供独特的可见性和控制能力，并拥有清晰的SaaS盈利模式，针对企业安全需求。 Traceforce采用开源许可模式，目前处于Beta阶段，需要在每台设备上部署，并与现有安全工具集成以增强监控。
 
 
 ## 🌐 背景与生态
 
-模型上下文协议（MCP）使AI代理能够安全地连接到数据源和工具。Traceforce通过提供对这些连接的实时监控，填补了市场上的空白，而传统的安全工具如EDR和CASB缺乏这种功能。
+随着AI的快速采用超越了对可见性和控制解决方案的需求，Traceforce通过提供AI应用的实时监控和威胁检测，填补了企业安全领域的空白。
 
 
 ## 💬 社区讨论
 
-社区评论强调了理解AI工具与MCP交互的重要性，以及需要更深入的应用行为跟踪。用户对实时连接图功能感到兴奋，并认为它有可能防止安全漏洞。
+社区评论表达了对项目的兴奋，并询问了竞争情况、现有工具以及MCP漏洞检测等功能。
 
 
 ## 🚀 应用前景
 
-Traceforce可用于金融、医疗保健和企业IT等行业，以监控AI应用的使用并防止数据泄露。其SaaS模式通过订阅费提供了一个明确的盈利路径。
+Traceforce可用于金融、医疗等行业，使用AI应用，提供基于SaaS的安全解决方案，防止数据泄露并确保合规。
 
 
 ## 🔧 技术栈
 
-技术栈包括用于二进制文件的Go语言，用于浏览器扩展的Node JS，以及一个开源的动态MCP渗透测试工具。它利用模型上下文协议（MCP）进行安全的AI代理连接。
+二进制程序使用Go语言开发，浏览器扩展使用Node JS编写，Traceforce通过MCPs收集数据，并与现有安全基础设施集成。
 
 
 ## 🎯 上手难度
 
-入门评级为进阶。前提条件包括Python环境以及安装Traceforce二进制文件和浏览器扩展。基本步骤包括配置和初始监控设置。
+进阶难度：在设备上安装二进制程序和扩展，配置安全设置，并在30分钟内访问仪表板。
 
 
 ## 👥 目标用户
 
-目标用户是企业安全团队、IT部门以及开发AI应用的开发者。角色包括后端工程师、机器学习实践者和DevOps专家。
+面向企业安全团队、IT部门以及在金融和医疗等行业开发AI应用的开发者。
 
 
 ## ⚖️ 类似项目对比
 
-竞争对手包括Runlayer等AI原生安全解决方案提供商，以及CrowdStrike和Palo Alto Networks等传统的EDR/CASB提供商。Traceforce通过其专注于AI应用连接和MCP安全的特点来区分自己。
+竞争对手包括Runlayer（AI原生安全）和CrowdStrike等传统EDR。Traceforce的区别在于更深入的AI应用可见性。
 
-
-## 📚 参考链接
-
-- [Model Context Protocol - Wikipedia](https://en.wikipedia.org/wiki/Model_Context_Protocol)
-- [MCP is the open standard helping AI agents take action. Here’s why it...](https://medium.com/@elisowski/mcp-explained-the-new-standard-connecting-ai-to-everything-79c5a1c98288)
-- [How to Run an MCP Pentest : Complete Guide](https://www.uprootsecurity.com/blog/how-to-run-mcp-pentest-guide)
 
 <details><summary>📄 查看原文内容</summary>
 
@@ -80,14 +74,14 @@ Hey HN, we’re Xia and Varun, the founders of Traceforce (<a href="https:&#x2F;
 
 --- Top Comments ---
 
-[brintha]: The tricky part here is not just spotting AI apps running on endpoints, but understanding how those AI tools interact with multiple cloud MCPs in real time - and what risks emerge from those connections. We built LynxTrac&#x27;s endpoint security to track deep app behavior and config changes, including registry and network activity, but connecting that to AI-driven MCP calls was a missing piece. Traceforce&#x27;s approach to building a live connectivity graph between AI apps and MCPs is exact...
-
 [laul_pogan]: Hey Xia! Super excited for this- good talking to you a few weeks ago and best luck with the launch :)
-
-[eddy-sekorti]: Congratulations, have you thought about setting up a professional trust center? you can try  https:&#x2F;&#x2F;sekorti.com
 
 [gk1]: +1 You&#x27;re facing competition from both the incumbents who can ship these capabilites to their massive userbase, and emerging startups like Runlayer who are running away with the AI-native segment. What are you offering that people want yet neither of those classes of solutions offer?
 
+[eddy-sekorti]: Congratulations, have you thought about setting up a professional trust center? you can try  https:&#x2F;&#x2F;sekorti.com
+
 [XiaHua]: We are also curious to ask what existing tools are folks using to gain visibility into what&#x27;s running out there?
+
+[belschak]: The application-level visibility point matches my experience. I removed an MCP server a while back because its tool descriptions quietly told the agent to prefer it as the primary search tool over the built-in one. Not a vulnerability, no leaked secrets, just the vendor steering agent behavior in a way you only notice if you read the raw tool definitions. Does mcp-xray flag that kind of prompt-level steering in tool descriptions, or is it focused on classic vulns?
 
 </details>
